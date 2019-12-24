@@ -16,3 +16,11 @@ Created by the command: npx create-react-app my_buildings
 * searchTerm to term of Instructor's implementation, i.e, keeping the name short and meaningful
 * if onChange prop is not present in input, then the input cannot be filled as it becomes read only
 * Diagram 6: Youtube API link
+* Can restrict the API key by clicking on Restrict key in the youtube api link and select HTTP referrers as Application restrictions
+* Then Accept requests from these HTTP referrers
+    * Give localhost:3000 for your application
+    * Save
+
+#### Documentation for Youtube API
+
+* First search for **youtube api search** in Google

@@ -1,15 +1,12 @@
-import React from 'react';
-import searchYouTube from "youtube-api-search";
+import axios from 'axios';
 
-const Youtube = () => {
-    const API_KEY = "AIzaSyDxXx_Y9ftFm-lv0hel3WI0NMFqJTES89g";
-    searchYouTube(
-      { key: API_KEY, term: this.state.term, maxResults: 6 },
-      videos => {
-        console.log(videos);
-      }
-    );
-}
+const KEY = "AIzaSyDxXx_Y9ftFm-lv0hel3WI0NMFqJTES89g";
 
-
-export default Youtube;
+export default axios.create({
+  baseURL: "https://www.googleapis.com/youtube/v3",
+  params: {
+    part: 'snippet',
+    maxResults: 5,
+    key: KEY
+  }
+});
