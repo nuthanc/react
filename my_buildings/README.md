@@ -24,3 +24,7 @@ Created by the command: npx create-react-app my_buildings
 #### Documentation for Youtube API
 
 * First search for **youtube api search** in Google
+* Create axios object in youtube component and export it
+* Passing prop onFormSubmit from App to SearchBar and SearchBar in turn calling that prop
+* Use the youtube component in the App component to search for the term
+* baseParams was exported as params in App component was getting overwritten
