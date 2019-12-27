@@ -28,3 +28,4 @@ Created by the command: npx create-react-app my_buildings
 * Passing prop onFormSubmit from App to SearchBar and SearchBar in turn calling that prop
 * Use the youtube component in the App component to search for the term
 * baseParams was exported as params in App component was getting overwritten
+* After getting the response, set State and let its default values be an empty array, as response.data.items is an array

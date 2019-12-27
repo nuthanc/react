@@ -3,22 +3,26 @@ import SearchBar from './SearchBar';
 import youtube, { baseParams } from '../apis/youtube';
 
 class App extends React.Component {
-    onTermSubmit = (term) => {
-      youtube.get('/search', {
-        params: {
-          ...baseParams,
-          q: term
-        }
-      });
-    };
+  state = { videos: [] };
 
-    render() {
-        return (
-          <div className="ui container" style={{marginTop: '15px'}}>
-            <SearchBar onFormSubmit={this.onTermSubmit} />
-          </div>
-        );
-    }
+  onTermSubmit = async (term) => {
+    const response = await youtube.get('/search', {
+      params: {
+        ...baseParams,
+        q: term
+      }
+    });
+    this.setState({videos: response.data.items})
+  };
+
+  render() {
+      return (
+        <div className="ui container" style={{marginTop: '15px'}}>
+          <SearchBar onFormSubmit={this.onTermSubmit} />
+          I have {this.state.videos.length} videos
+        </div>
+      );
+  }
 }
 
 export default App;
