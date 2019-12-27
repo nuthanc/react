@@ -35,3 +35,4 @@ Created by the command: npx create-react-app my_buildings
 * Create VideoList and wire it to App.js and pass down videos
 * Destructure videos property out of props object using ES2015 syntax
 * Create VideoItem and wire it to VideoList and pass down videos
+* To check what the video prop contains, can go to Network property and then check down the properties
