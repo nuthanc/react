@@ -41,4 +41,6 @@ Created by the command: npx create-react-app my_buildings
 
 #### Styling the VideoList
 
-* 
+* Reference link: https://www.draw.io/?mode=github#HStephenGrider%2FReduxCodeV2%2Fmaster%2Fdiagrams%2F07%2Fdiagrams.xml
+* Semantic ui doc: https://semantic-ui.com/elements/list.html
+* Diagram 7: Semantic ui class correlation
