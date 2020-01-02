@@ -36,3 +36,9 @@ Created by the command: npx create-react-app my_buildings
 * Destructure videos property out of props object using ES2015 syntax
 * Create VideoItem and wire it to VideoList and pass down videos
 * To check what the video prop contains, can go to Network property and then check down the properties
+* In VideoItem, thumbnails are also rendered
+* Note while rendering, everything is placed within a div
+
+#### Styling the VideoList
+
+* 
