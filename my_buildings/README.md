@@ -44,3 +44,9 @@ Created by the command: npx create-react-app my_buildings
 * Reference link: https://www.draw.io/?mode=github#HStephenGrider%2FReduxCodeV2%2Fmaster%2Fdiagrams%2F07%2Fdiagrams.xml
 * Semantic ui doc: https://semantic-ui.com/elements/list.html
 * Diagram 7: Semantic ui class correlation
+* Custom CSS required for making the text centered and reducing the size of the image
+    * Create VideoItem.css
+    * Give classname equal to the component name to root element 
+    * !important is used for overriding the style by providing more weight than normal property
+    * Initially .video-item img was given but it was getting overridden
+    * So even more specific selector was given: .video-item.item img
