@@ -60,3 +60,8 @@ Created by the command: npx create-react-app my_buildings
     * When video is clicked in VideoItem, that particular video is used for the callback
 * In VideoItem, we can't use onClick={onVideoSelect} as this doesn't pass the argument
 * So, it is called with an arrow function
+
+#### VideoDetail Component
+* setState of selectedVideo and create new Component VideoDetail
+* VideoDetail rendering in between SearchBar and VideoList
+* nullCheck inside VideoDetail to avoid the Error message
