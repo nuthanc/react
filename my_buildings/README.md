@@ -50,3 +50,13 @@ Created by the command: npx create-react-app my_buildings
     * !important is used for overriding the style by providing more weight than normal property
     * Initially .video-item img was given but it was getting overridden
     * So even more specific selector was given: .video-item.item img
+
+#### Click to get Detail Window
+
+* Reference link: https://www.draw.io/?mode=github#HStephenGrider%2FReduxCodeV2%2Fmaster%2Fdiagrams%2F07%2Fdiagrams.xml
+* Diagram 8: App having another state called selectedVideo
+* Diagram 9: Workflow from App to other components
+    * New callback reference is passed down to VideoList and VideoItem
+    * When video is clicked in VideoItem, that particular video is used for the callback
+* In VideoItem, we can't use onClick={onVideoSelect} as this doesn't pass the argument
+* So, it is called with an arrow function
