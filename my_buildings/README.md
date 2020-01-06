@@ -65,3 +65,17 @@ Created by the command: npx create-react-app my_buildings
 * setState of selectedVideo and create new Component VideoDetail
 * VideoDetail rendering in between SearchBar and VideoList
 * nullCheck inside VideoDetail to avoid the Error message
+
+#### Styling the VideoDetail
+* ui segment class for nice looking box
+* Add title and description in ui header and p respectively
+
+#### Displaying the VideoPlayer
+* HTML element: Iframe tag
+* Iframe tag is like any other HTML tag
+* It attempts to make a request to some outside website
+* Implementation done in VideoDetail component
+* ui embed for embedded video player in this context
+* To show actual working, go to youtube.com and then click on Share and then select Embed
+* This gets the details of the iframe element, src and the videoId
+* ES2015 template string which are backticks``, then within ${var}
