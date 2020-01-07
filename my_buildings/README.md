@@ -91,3 +91,7 @@ Created by the command: npx create-react-app my_buildings
 * ui row to make them in the same line
 * The next div is to show themselves next to each other
 * 11 and 5 out of 16 col
+
+#### Defaulting Video Selection 
+* In App's onTermSubmit, setState of selectedVideo also
+* Default video in componentDidMount
