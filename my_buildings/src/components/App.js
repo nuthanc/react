@@ -23,10 +23,21 @@ class App extends React.Component {
 
   render() {
       return (
-        <div className="ui container" style={{marginTop: '15px'}}>
+        <div className="ui container" style={{ marginTop: "15px" }}>
           <SearchBar onFormSubmit={this.onTermSubmit} />
-          <VideoDetail video={this.state.selectedVideo} />
-          <VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+          <div className="ui grid">
+            <div className="ui row">
+              <div className="eleven wide column">
+                <VideoDetail video={this.state.selectedVideo} />
+              </div>
+              <div className="five wide column">
+                <VideoList
+                  onVideoSelect={this.onVideoSelect}
+                  videos={this.state.videos}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       );
   }

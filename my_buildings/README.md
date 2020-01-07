@@ -79,3 +79,15 @@ Created by the command: npx create-react-app my_buildings
 * To show actual working, go to youtube.com and then click on Share and then select Embed
 * This gets the details of the iframe element, src and the videoId
 * ES2015 template string which are backticks``, then within ${var}
+
+#### Clearing warnings
+* Give title to iframe
+* alt to img in VideoItem
+* key prop to VideoList's VideoItem
+
+#### Styling for showing VideoList to RHS of video
+* Using semantic ui's Grid system in App component
+* Grid in semantic ui's docs
+* ui row to make them in the same line
+* The next div is to show themselves next to each other
+* 11 and 5 out of 16 col
