@@ -30,8 +30,13 @@
     * Diagram 04: Policies department
 * Diagram 10: **Redux cycle with Insurance company**
 * Write code in https://codepen.io
+    * codepen.js is a replica of code in the above website
     * Settings: 
         * Javascript: Search for redux and select it
     * Code for Redux cycle
         * Action Creator: Function that returns a JS object referred by name 'action'
             * Action is like Form having *Type* and *Payload*
+            * One Action Creator for each Form Type
+            * By convention, type is all in Uppercase with Underscore as separator
+            * Using ES2015, we could have done
+                * payload: {name,amount}
