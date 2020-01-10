@@ -40,3 +40,16 @@
             * By convention, type is all in Uppercase with Underscore as separator
             * Using ES2015, we could have done
                 * payload: {name,amount}
+            * createPolicy, deletePolicy and createClaim are Action Creators
+        * Skipping dispatch as it is part of Redux library
+        * Reducers analogous to Departments
+            * Parameters
+                * Getting oldListOfClaims analogous to fetching from central repo
+                * action from the Action Creator
+            * claimHistory, accounting and policies are reducers
+            * ... refers to take all the elements of the array and add them to a brand new array
+            * We could have done oldListOfClaims.push, but this modifies the array
+            * We always want to have a new array instead of modifying the existing
+            * The very first time, oldListOfClaims will be undefined, so provide a default value of []
+            * Diagram 05-acc for reference of Accounting department
+            * Filter function produces a new array with values filtered
