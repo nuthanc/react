@@ -58,6 +58,17 @@
             * Action Creators
             * Reducers
         * Use combineReducers and createStore
+        * combineReducers
+            * Purpose: Wire up all Reducers
+            * Keys need not be same as values, but it is by convention
         * This store has a method called **dispatch** which acts like a Form Receiver which makes a copy of the Action and sents it to all the Reducers
         * getState is like Central repo's data 
-        
+#### Redux cycle in Action
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F09%2Fdiagrams.xml
+* Diagram 21: Code flow
+* There is no way to manually reach into the store and modify the data
+* The state change can only be made through
+    * Action Creators 
+    * Dispatch
+#### Why Redux?
+* Diagram 13 and 14: Why 
