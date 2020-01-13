@@ -70,4 +70,30 @@ const policies = (listOfPolicies = [], action) => {
         return listOfPolicies.filter(name => name !== action.payload.name);
     }
     return listOfPolicies;
-}
+};
+
+// console.log(Redux) To checkout the attributes 
+const { createStore, combineReducers } = Redux;
+
+const ourDepartments = combineReducers({
+    accounting: accounting,
+    claimHistory: claimHistory,
+    policies: policies
+});
+
+const store = createStore(ourDepartments);
+
+const action = createPolicy('Alex', 20);
+
+store.dispatch(action);
+store.getState();
+
+store.dispatch(createPolicy('Jim', 30));
+store.dispatch(createPolicy('Bob', 40));
+
+store.dispatch(createClaim("Alex", 120));
+store.dispatch(createClaim("Jim", 50));
+
+store.dispatch(deletePolicy('Bob'));
+
+console.log(store.getState());

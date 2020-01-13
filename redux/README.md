@@ -7,7 +7,7 @@
 * Diagram 00: Story
     * Policy: Contract for some incident
     * Claim: Request for pay when certain accidents happen
-* Diagram 1-ins: Scenario
+#### Diagram 1-ins: Scenario
     * Diagram 2: When form is handed to Policies department   
         * Policies department maintains a list of customers
     * Diagram 3: Management polling Policies department for customers in the list
@@ -53,3 +53,11 @@
             * The very first time, oldListOfClaims will be undefined, so provide a default value of []
             * Diagram 05-acc for reference of Accounting department
             * Filter function produces a new array with values filtered
+    * Now wire all the above to a single object called **store**
+        * It is essentially a collection of 
+            * Action Creators
+            * Reducers
+        * Use combineReducers and createStore
+        * This store has a method called **dispatch** which acts like a Form Receiver which makes a copy of the Action and sents it to all the Reducers
+        * getState is like Central repo's data 
+        
