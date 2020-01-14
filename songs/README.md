@@ -10,3 +10,8 @@
 #### App Setup
 * Create index.js, App.js
 * Hookup semantic-ui in public index
+* Observe that App.js is a functional component
+    * This is because all the state will now be handled by Redux
+* Without Redux: Diagram 06
+* With Redux: Diagram 07
+    * Reducers for each state previously in without redux
