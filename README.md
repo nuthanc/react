@@ -5,3 +5,11 @@ This repo has many branches denoting different projects
 
 Change of approach:
 * Different folders for different projects
+
+## Projects
+* Redux
+    * Introduction to redux and its various components
+* Songs
+    * Simple App with Song title and selection
+    * Created using the command
+        * npx create-react-app songs
