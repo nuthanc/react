@@ -31,3 +31,27 @@
     * export before function declaration
 * Use curly braces to import a named export
     * import {selectSong} from '../actions'
+
+##### index.js of reducers
+* Referencing Diagram 07
+* songsReducer is a static list of songs and is an overkill example
+* selectedSongReducer is the other Reducer
+* Even though we have one Action Creator, considering the future, we still have the if statement
+* Import named export **combineReducers**
+* export combineReducers
+
+##### index.js of src
+* Referencing Diagram 08
+* import Provider, createStore and reducers
+* Render App component within Provider and use store as prop after createStore of reducers
+
+##### SongList component
+* import named export Component or do React.Component and wire it to App.js
+
+##### Connect component
+* Reference diagram: Diagram 09-comms
+* Connect component is defined directly inside SongList.js
+* Because only SongList needs Connect to reach up to Provide to get list of songs
+* To do this:
+    * import connect
+    * export default connect()(SongList)
