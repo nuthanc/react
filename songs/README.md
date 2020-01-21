@@ -72,3 +72,25 @@
         * Now use this function **mapStateToProps** as argument in connect
         * This will make songs appear as props to SongList
         
+##### Rendering List of Songs
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F10%2Fdiagrams.xml
+* Referencing Diagram 1
+* renderList within SongList component
+* 2 returns, 1 for map and 1 for returning the list of songs
+* JSX referencing semantic-ui within map of songs
+    * floated to appear to the Right hand side of each list item
+    * First button is written and then content
+    * song title in another div with className content
+* call renderList within render method
+* But after npm start, we see that it's not displaying proper yet
+* So, some styling in render method
+    * div of className "ui divided list"
+    * After this, we see the button floated to the right
+    * But now, it's stretching from all the way from left to right
+    * So, for this we add the Grid system(not same as CSS Grid System)
+* Add some more styling in App component
+* Now it looks good
+
+##### Select Song and Update the state by calling Action Creators
+* Done in SongList.js 
+
