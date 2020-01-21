@@ -52,6 +52,23 @@
 * Reference diagram: Diagram 09-comms
 * Connect component is defined directly inside SongList.js
 * Because only SongList needs Connect to reach up to Provide to get list of songs
+* Any time, the list of songs changes, the Provider automatically notifies the Connect component
 * To do this:
     * import connect
     * export default connect()(SongList)
+    ```javascript
+    function connect() {
+        return function() {
+            return 'Hi there';
+        }
+    }
+    connect() // Returns the function
+    connect()() // Hi there, here function is getting invoked
+    ```
+    * To Tell connect to get specific data out of redux store
+        * Use a function which is by convention called **mapStateToProps**
+        * It does some computation to change the State to Props
+        * It's argument is state which is the state of the store
+        * Now use this function **mapStateToProps** as argument in connect
+        * This will make songs appear as props to SongList
+        
