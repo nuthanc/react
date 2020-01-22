@@ -100,5 +100,8 @@
 * This changes the state and to verify it, check in mapStateToProps
 * Every time the state is changed, the mapStateToProps reruns with the newly created state object
 * Why go to the extra work of passing selectSong to connect instead of calling directly within SongList
-    * 
+    * Diagram 10: Redux is not magic
+    * If not passed to connect, the action creator alone cannot update the reducers
+    * **connect** automatically calls **dispatch** function for us for the action creators provided in the argument whenever it is called in the props.actionCreator of the component
+
 
