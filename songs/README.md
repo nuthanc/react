@@ -93,4 +93,12 @@
 
 ##### Select Song and Update the state by calling Action Creators
 * Done in SongList.js 
+* import selectSong from actions
+* Pass selectSong to connect as 2nd argument to connect function with both key and value as selectSong using ES2015 syntax
+* This selectSong can be used as props in SongList component
+* Then inside renderList, onClick inside button we call selectSong with the song being selected
+* This changes the state and to verify it, check in mapStateToProps
+* Every time the state is changed, the mapStateToProps reruns with the newly created state object
+* Why go to the extra work of passing selectSong to connect instead of calling directly within SongList
+    * 
 
