@@ -104,4 +104,13 @@
     * If not passed to connect, the action creator alone cannot update the reducers
     * **connect** automatically calls **dispatch** function for us for the action creators provided in the argument whenever it is called in the props.actionCreator of the component
 
+##### SongDetail component
+* Diagram 11: SongDetail Component 
+* Creating functional component that works with connect
+* From reducers, you can see that selectedSong can be obtained from state.selectedSong
+* key can be given anything in mapStateToProps
+* To display it, we need to go to App.js
+* Now we can see that App component doesn't really need to provide configs to its child components
+* Now redux provides all this config
+* Destructuring song property in SongDetail
 
