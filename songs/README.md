@@ -114,3 +114,5 @@
 * Now redux provides all this config
 * Destructuring song property in SongDetail
 
+### Redux exercise
+* Done in branch redux_exercise
