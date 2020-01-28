@@ -114,3 +114,8 @@
 * Now redux provides all this config
 * Destructuring song property in SongDetail
 
+
+##### Exercise
+* In buttonSelected function of reducer, count=0 is not like default parameter. If nothing is given, it takes its previous value
+
+

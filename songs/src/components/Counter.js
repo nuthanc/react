@@ -5,10 +5,10 @@ import { pressIncrement, pressDecrement } from "../actions";
 const Counter = (props) => {
   return (
     <div>
-      <button className="increment" onClick={props.pressIncrement(props.count)}>
+      <button className="increment" onClick={() => props.pressIncrement(props.count)}>
         Increment
       </button>
-      <button className="decrement" onClick={props.pressIncrement(props.count)}>
+      <button className="decrement" onClick={() => props.pressDecrement(props.count)}>
         Decrement
       </button>
       Current count: <span>0</span>
@@ -17,7 +17,8 @@ const Counter = (props) => {
 };
 
 const mapStateToProps = (state) => {
+  console.log("From Counter:",state)
   return { count: state.count };
 }
 
-export default connect(mapStateToProps,{pressIncrement,pressDecrement})(Counter)
+export default connect(mapStateToProps, { pressIncrement, pressDecrement })(Counter);
