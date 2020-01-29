@@ -1,19 +1,13 @@
 import { combineReducers } from 'redux';
 
 const buttonSelected = (count=0, action) => {
-    if(action.type === 'INCREMENT'){
-        console.log('ACTION payload is',action.payload)
-        console.log("Count is ",count);
-        if(count === 0)
-            return 1 + action.payload;
-        return action.payload + count;
+    if (action.type === "INCREMENT") {
+      console.log("ACTION payload is", action.payload);
+      return action.payload + 1;
+    } else if (action.type === "DECREMENT") {
+      return action.payload - 1;
     }
-    else if(action.type === 'DECREMENT'){
-        if (count === 0)
-            return 1 - action.payload;
-        return count + action.payload;
-    }
-    return 0;
+    return count;
 };
 
 export default combineReducers({

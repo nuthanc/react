@@ -11,13 +11,13 @@ const Counter = (props) => {
       <button className="decrement" onClick={() => props.pressDecrement(props.count)}>
         Decrement
       </button>
-      Current count: <span>0</span>
+      Current count: <span>{props.count}</span>
     </div>
   );
 };
 
 const mapStateToProps = (state) => {
-  console.log("From Counter:",state)
+  // console.log("From Counter:",state)
   return { count: state.count };
 }
 
