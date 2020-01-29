@@ -116,3 +116,5 @@
 
 ### Redux exercise
 * Done in branch redux_exercise
+* In exercise, reducer should have one more argument other than action, if action modifies that argument.
+* Otherwise, you will find type of undefined error
