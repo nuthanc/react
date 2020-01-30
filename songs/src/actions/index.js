@@ -1,12 +1,12 @@
 // Action Creator
-export const pressIncrement = count => {
+export const pressIncrement = () => {
     // Return an Action
     return {
         type: 'INCREMENT',
     };
 };
 
-export const pressDecrement = count => {
+export const pressDecrement = () => {
   // Return an Action
   return {
     type: "DECREMENT",

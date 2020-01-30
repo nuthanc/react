@@ -7,3 +7,5 @@
 ### Instructor's implementation
 * In action, he used only type without payload
 * In reducers, he isn't using action.payload since it's not there
+* In onClick, the usage was without the () since we are not passing any argument
+    * onClick = {props.pressIncrement}

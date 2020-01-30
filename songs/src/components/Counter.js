@@ -5,10 +5,10 @@ import { pressIncrement, pressDecrement } from "../actions";
 const Counter = (props) => {
   return (
     <div>
-      <button className="increment" onClick={() => props.pressIncrement(props.count)}>
+      <button className="increment" onClick={props.pressIncrement}>
         Increment
       </button>
-      <button className="decrement" onClick={() => props.pressDecrement(props.count)}>
+      <button className="decrement" onClick={props.pressDecrement}>
         Decrement
       </button>
       Current count: <span>{props.count}</span>
