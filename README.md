@@ -12,4 +12,9 @@ Change of approach:
 * Songs
     * Simple App with Song title and selection
     * Created using the command
-        * npx create-react-app songs
+        * redux react-redux axios redux-thunk
+
+* Blog
+    * redux react-redux axios blog
+    * Simple application of only 2 components with more learning on Redux and middleware Redux-thunk
+    
