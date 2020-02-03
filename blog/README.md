@@ -53,6 +53,10 @@
 * Time: Diagram 12-time
 * Behind the scenes floe: Diagram 13-flow
 
-
-
-
+### Middleware for handling Asynchronous requests
+* Diagram 16-async: 
+* Flow for Middleware: Diagram 17-cycle
+* What is **Middleware in Redux**: Diagram 18-mw
+* **Rules with Redux Thunk**: Diagram 19-thu
+* **Redux Thunk behind the scenes**: Diagram 20-thu
+* Source code of Redux Thunk: Diagram 21-thu
