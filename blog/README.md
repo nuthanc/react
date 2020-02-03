@@ -32,3 +32,15 @@
 * Wire the above in PostList component
 * 1st argument in connect is given null because we still don't have any state to give it to the component, else it is always mapStateToProps
 * In componentDidMount method
+
+### Making request from Action Creator
+* Create apis folder within src and have jsonPlaceholder file
+* In that, import axios
+* To get endpoint, open up posts endpoint from doc and copy that and take out posts
+* Then in index.js of actions import the above file
+* We will use async await syntax to fetch the response
+* Then assign response to payload
+* When npm start is issued, we get the following error
+    * Error: Actions must be plain objects. Use custom middleware for async actions.
+
+
