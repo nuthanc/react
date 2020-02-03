@@ -41,6 +41,18 @@
 * We will use async await syntax to fetch the response
 * Then assign response to payload
 * When npm start is issued, we get the following error
-    * Error: Actions must be plain objects. Use custom middleware for async actions.
+    * Error: Actions must be plain objects. Use custom middleware for async actions
+
+### Reason with the error: Diagram 13-reasons
+* Code gets converted to ES2015 syntax, so action creator is not returning the action object
+* Can check this by copy-pasting the fetchPosts function in babeljs.io(Enable every Preset in Try it Out page)
+* Action Creator is not working as expected because of async-await syntax
+* **Flow explained**: Diagram 14-flow
+    * Using Promise object by removing async-await can be thought of an approach, but this still doesn't work due to the 2nd reason mentioned in the Diagram
+* Flow for Promise: Diagram 11-flow
+* Time: Diagram 12-time
+* Behind the scenes floe: Diagram 13-flow
+
+
 
 
