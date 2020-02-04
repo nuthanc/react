@@ -70,3 +70,8 @@
 * Using dispatch directly within the inner function with the action creator
 * We can still use async-await syntax as we don't care what the inner function in ES2015 of async-await returns
 * We just need to care about the the outer return function which has arguments of dispatch and getState
+* We can refactor this further:
+    * function can be made into arrow function
+    * getState is not used, so it can be removed from the argument next to dispatch
+    * When arrow function with argument is used, parenthesis is optional 
+    * In the outer function since only return is only expression, the braces and return can be removed
