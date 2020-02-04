@@ -60,3 +60,13 @@
 * **Rules with Redux Thunk**: Diagram 19-thu
 * **Redux Thunk behind the scenes**: Diagram 20-thu
 * Source code of Redux Thunk: Diagram 21-thu
+
+### Wiring Up Redux-thunk
+* Import redux-thunk and applyMiddleware in main index.js
+* applyMiddleware is used to connect the middleware to the Redux store
+* Pass applyMiddleware with thunk as middleware argument to createStore
+
+### Middleware related changes in actions
+* Using dispatch directly within the inner function with the action creator
+* We can still use async-await syntax as we don't care what the inner function in ES2015 of async-await returns
+* We just need to care about the the outer return function which has arguments of dispatch and getState
