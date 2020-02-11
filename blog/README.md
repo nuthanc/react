@@ -74,4 +74,65 @@
     * function can be made into arrow function
     * getState is not used, so it can be removed from the argument next to dispatch
     * When arrow function with argument is used, parenthesis is optional 
-    * In the outer function since only return is only expression, the braces and return can be removed
+    * In the outer function since only return is only expression, the braces and return can be removed 
+
+### Back with original flow: Diagram 9
+* But in the diagram, we use middleware to make the api request
+* Now we have to define the reducer
+* Diagram Link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F12%2Fdiagrams.xml
+* Diagram 01-data
+
+### Defining Reducers
+* Separate file for each Reducer, then import them in index.js and wire them up to the combineReducers
+* Diagram 01-reducers
+* Create postsReducers within reducers directory and import and wire up in index.js 
+* **Rules of Reducers**: Diagram 03-rules
+    * Diagram 04-red: When Redux application is first started, each Reducer gets called 1 time automatically
+        * 2 arguments received
+        * That 1st argument is equivalent to creating an if statement and initializing it
+        ```javascript
+            const selectedSongReducer = (selectedSong = null, action ) =>
+
+                equivalent to 
+
+            if (selectedSong === undefined){
+                selectedSong = null;
+            }
+        ```
+    * 2nd Rule: Diagram 5-next: 2nd time the Reducer gets called
+    * 3rd Rule: Diagram 5-pure:
+        * No getting DOM elements
+        * No making API requests
+    * 4th Rule: Misleading because of one corner case
+        * We are never taking state and assigning it
+        * In js, strings and numbers are immutable values
+        * In js, === for objects and arrays is a reference check and not value check
+        * Diagram 4-mutation
+        * **Behind the scenes of why we must not mutate the state Video 168**
+            * Source code of Redux library: github.com/reduxjs/redux/
+            * combineReducers Line 192: hasChanged
+            * This block of code gets executed when an action is dispatched
+            * If the referenced object's value and not the reference object itself changes, redux will think that there is no change
+* Mutations: Diagram 13-mutations
+    * **Good ways of mutating state object**
+
+#### PostsReducer
+* Argument of state and action and since we are dealing with a list of posts, we'll default state to an empty array
+* Return state when there is no action of type FETCH_POSTS
+* In order to make sure, we handle every action that comes in our Reducer, we use *switch* syntax
+* We are now done with all except the last one in Diagram 1-data
+
+### React App rerendered
+* To get Redux data into React side, we define mapStateToProps function and then pass it to connect
+* **Every single time our reducer is run, mapStateToProps will be called again**
+* The return object from mapStateToProps will appear as props to our component
+
+#### Why 2 console.logs are there in Console when there is only one in PostList(Entire flow in React-Redux)
+* This is because when our application is **first loaded up inside the browser, all of our Reducers run one initial time**
+* Our React side of the application is going to be rendered one time on the screen
+* So the PostList component will be displayed one time on the screen, and empty array is console logged
+* After the PostList component shows up on the screen, componentDidMount will be called and we will fetch some data from the api
+* After some action is dispatched to the reducer, our Reducer sees it's of type 'FETCH_POSTS' and will return the payload
+* Since payload is a totally new value, Redux tells React to re-render its application
+* mapStateToProps will be called and the component will be re-rendered with the new state
+
