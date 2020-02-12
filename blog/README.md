@@ -154,3 +154,8 @@
 ##### The right way to do:
 * Diagram 19-method:
 * We will place the UserHeader component with userId within renderList method
+
+### Fetching Singular Records
+* Diagram 16-update: Idea
+* In action's index.js file, create new action creator
+* ES2015 syntax of backticks instead of doing '/users/' + id
