@@ -139,4 +139,18 @@
 ### renderList method in PostList for List Building
 * Within the posts map function, we are gonna add classes of semantic-ui
 * Call renderList from render method
+
+### Display Users
 * Diagram 2-components: Looks of UI: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F11%2Fdiagrams.xml
+* In the api link: jsonplaceholder.typicode.com/posts
+    * We see the userId which is the user associated with the Post
+* We need to make another API request to get the User associated with the Post
+* Diagram Link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F12%2Fdiagrams.xml
+* Diagram 17-posts: User to Post relationship
+##### Easy way to do this:
+* Diagram 18-easy:
+* But this is not done in a real application
+* Under the resources section of our API doc, go to Routes section where you can see we can get details of individual records
+##### The right way to do:
+* Diagram 19-method:
+* We will place the UserHeader component with userId within renderList method
