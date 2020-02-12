@@ -136,3 +136,7 @@
 * Since payload is a totally new value, Redux tells React to re-render its application
 * mapStateToProps will be called and the component will be re-rendered with the new state
 
+### renderList method in PostList for List Building
+* Within the posts map function, we are gonna add classes of semantic-ui
+* Call renderList from render method
+* Diagram 2-components: Looks of UI: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F11%2Fdiagrams.xml
