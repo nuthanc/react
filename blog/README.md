@@ -165,3 +165,14 @@
 * Import connect and action creator within UserHeader component
 * Use componentDidMount method to fetch the User
 * this.props.userId is obtained as props passed down from PostList component
+
+### Finding Relevant Users
+* Diagram 16-update: Create reducer for action FETCH_USER type
+* usersReducers is created and since it has to maintain an array of Users, its default state will be an empty array
+* Wire it up in Reducer's index.js file by importing it and adding it as key in combineReducers
+* Then in UserHeader.js file, define mapStateToProps function
+* Then in render method, find is a builtin method in js arrays
+* Initially user will empty, so add that check
+* Then return user.name if it is not empty
+* Also add className of header
+* Also pass mapStateToProps in connect function
