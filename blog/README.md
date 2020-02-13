@@ -159,3 +159,9 @@
 * Diagram 16-update: Idea
 * In action's index.js file, create new action creator
 * ES2015 syntax of backticks instead of doing '/users/' + id
+
+### Displaying the User Header
+* Create UserHeader component within components folder and wire it to PostList component
+* Import connect and action creator within UserHeader component
+* Use componentDidMount method to fetch the User
+* this.props.userId is obtained as props passed down from PostList component
