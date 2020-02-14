@@ -183,3 +183,7 @@
 * mapStateToProps is used to do precalculations
 * Rather than finding the appropriate User within the Component, we do it in mapStateToProps function
 * mapStateToProps also receives a second argument called ownProps which is a copy which gets sent to the Component
+
+### Issue: Duplicate requests
+* Chrome Inspect and go to Network XHR requests
+* Repeated API calls to same endpoint
