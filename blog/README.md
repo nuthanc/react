@@ -176,3 +176,10 @@
 * Then return user.name if it is not empty
 * Also add className of header
 * Also pass mapStateToProps in connect function
+
+### Extracting Logic to MapStateToProps
+* UserHeader is getting data of all the Users
+* UserHeader is not suitable to get the data of all the Users, and its purpose is to show one User on the screen
+* mapStateToProps is used to do precalculations
+* Rather than finding the appropriate User within the Component, we do it in mapStateToProps function
+* mapStateToProps also receives a second argument called ownProps which is a copy which gets sent to the Component
