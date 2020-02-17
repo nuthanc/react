@@ -206,4 +206,13 @@ memoizedGetUser(3)
 ```
 * memoize can be called one time with unique argument and if same argument is called, it returns whatever value was returned previously
 
-### 
+### Memoization Issues
+* In actions' index.js, import lodash
+* Just to understand clearly, turning back arrow syntax to function syntax
+* Now which of the 2 functions to memoize in fetchUser
+* First we will try be memoizing the outer function
+    * This doesn't solve the repeated API requests
+    * Every single time, this function is called the memoize is gonna return whatever is called the 1st time, which in this case is a function. So memoize is behaving normally
+* Now let's try memoizing the inner function
+
+
