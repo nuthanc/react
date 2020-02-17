@@ -214,5 +214,7 @@ memoizedGetUser(3)
     * This doesn't solve the repeated API requests
     * Every single time, this function is called the memoize is gonna return whatever is called the 1st time, which in this case is a function. So memoize is behaving normally
 * Now let's try memoizing the inner function
+    * Even now, we are making repeated requests
+    * Every time fetchUser is called, new function will be created and then memoized
 
 
