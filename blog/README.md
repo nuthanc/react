@@ -187,3 +187,23 @@
 ### Issue: Duplicate requests
 * Chrome Inspect and go to Network XHR requests
 * Repeated API calls to same endpoint
+
+### Memoizing Functions
+* Go to Lodash docs and look for memoize function
+* Open Chrome Console on lodash.com
+* Shift Enter to go to new line without running the code
+* fetch function for making network request
+``` javascript
+function getUser(id) {
+fetch(id);
+return 'Made a Request!'
+}
+// Make request by calling getUser(2)
+
+const memoizedGetUser = _.memoize(getUser)
+memoizedGetUser(3)
+
+```
+* memoize can be called one time with unique argument and if same argument is called, it returns whatever value was returned previously
+
+### 
