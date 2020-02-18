@@ -217,4 +217,9 @@ memoizedGetUser(3)
     * Even now, we are making repeated requests
     * Every time fetchUser is called, new function will be created and then memoized
 
-
+### One Time Memoization
+* Define a function outside our Action Creator, which is going to make a request and then dispatch an action
+* Memoize outside of the Action Creator
+* Define _fetchUser, _ for meaning Private function
+* Pass id and dispatch as arguments to _fetchUser and move async to _fetchUser
+* After running npm start, we no longer see the duplicate requests
