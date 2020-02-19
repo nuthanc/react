@@ -223,3 +223,16 @@ memoizedGetUser(3)
 * Define _fetchUser, _ for meaning Private function
 * Pass id and dispatch as arguments to _fetchUser and move async to _fetchUser
 * After running npm start, we no longer see the duplicate requests
+
+### Alternate Overfetching Solution
+* Diagram 18-alt: 
+* With this, we still need to have fetchPosts and fetchUser action creators
+* We need to have action creators that do little things rather than one big thing
+* New action creator fetchPostsAndUsers
+
+#### Action Creators in Action Creators
+* fetchPostsAndUsers is the only Action creator we are going to call
+* We need make sure to dispatch fetchPosts and fetchUser action creators manually
+* Since redux-thunks gets activated whenever we **dispatch** a function(mainly) or action creator
+* await before dispatch because we don't want to handle any other logic in fetchPostsAndUsers until that asynchronous API call is done
+* Wire the new Action Creator in PostList component and replace fetchPosts with fetchPostsAndUsers
