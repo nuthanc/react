@@ -225,6 +225,7 @@ memoizedGetUser(3)
 * After running npm start, we no longer see the duplicate requests
 
 ### Alternate Overfetching Solution
+* * Diagram Link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F12%2Fdiagrams.xml
 * Diagram 18-alt: 
 * With this, we still need to have fetchPosts and fetchUser action creators
 * We need to have action creators that do little things rather than one big thing
@@ -236,3 +237,21 @@ memoizedGetUser(3)
 * Since redux-thunks gets activated whenever we **dispatch** a function(mainly) or action creator
 * await before dispatch because we don't want to handle any other logic in fetchPostsAndUsers until that asynchronous API call is done
 * Wire the new Action Creator in PostList component and replace fetchPosts with fetchPostsAndUsers
+
+### Finding Unique User Ids
+* Diagram 18-alt
+* Get list of posts
+* This is very easy as 2nd argument redux-thunk calls with is getState 
+* We can access posts by getState().posts
+* _.map can get only the required parameter by passing it as the 2nd argument
+* _.uniq for only the unique userId
+* Last thing we need to do is to call fetchUser for each unique userId
+* There's no need to put await for fetchUsers because we are not doing any logic after this
+* Even if we want to do, it's not possible within forEach
+* Alternate way would be to use maps and Promises
+```javascript
+Promise.all(usersIds.map(id => dispatch(fetchUser(id)))).then
+# or
+await Promise.all(usersIds.map(id => dispatch(fetchUser(id))))
+```
+* So after doing this, we can remove componentDidMount and fetchUser action creator in UserHeader.js
