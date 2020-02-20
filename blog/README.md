@@ -255,3 +255,16 @@ Promise.all(usersIds.map(id => dispatch(fetchUser(id)))).then
 await Promise.all(usersIds.map(id => dispatch(fetchUser(id))))
 ```
 * So after doing this, we can remove componentDidMount and fetchUser action creator in UserHeader.js
+
+### Quick Refactor With Chain in index.js of actions
+* Remove userIds with all the logic with chain statement of lodash
+
+### App Wrapup
+* Inside of root index.js file, we imported redux-thunk and applied as middleware as 2nd argument in createStore, which is then assigned to store
+* By applying that middleware
+    * Any time we dispatch an action, the action will be sent to redux-thunk as middleware
+    * And then after processing by redux-thunk, it will be sent to all the Reducers
+* Then store is passed to Provider as prop
+* Action creators within Action creators
+* Reducers having state as first argument
+* Switch syntax in Reducers and ... syntax to append and create a new state
