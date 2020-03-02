@@ -9,11 +9,9 @@
 * npm install react-router-dom
 * Diagram 9-libs
 * In App.js, import BrowserRouter and Route
-```javascript
-const PageOne = () = {
-    return <div>PageOne</div>;
-}
+* URL path: Diagram 15-path
 
-const PageTwo = () = {
-    return <div>PageTwo</div>;
-}
+### How React Router Works
+* Diagram 10-rr: How React Router Works
+* BrowserRouter creates a **history** object, which is responsible for keeping track of the address bar(Just the portion after the domain name and the port)
+* BrowserRouter listens for changes to history and then based on path shows the content

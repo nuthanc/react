@@ -22,3 +22,4 @@
 * mkdir streams 
 * streams is gonna be the general name of our application
 * npx create-react-app client
+* Check client's README file
