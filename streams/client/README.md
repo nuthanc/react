@@ -24,3 +24,9 @@
 * What path property does for us
     * Diagram 12-path,Diagram 13-path and Diagram 14-path
     * Adding exact by itself is equivalent to exact={true} and it does an exact match instead of contains
+
+### How to Not Navigate with React Router
+* Anchor tags can be used to Navigate between different paths(But this is a Bad approach)
+* But that's not how we want to handle Navigation within React-Router App
+* Bad Navigation: Diagram 17-link
+    * When the browser receives the index.html file, it dumps(erases) all the previous data(including state data)
