@@ -30,3 +30,18 @@
 * But that's not how we want to handle Navigation within React-Router App
 * Bad Navigation: Diagram 17-link
     * When the browser receives the index.html file, it dumps(erases) all the previous data(including state data)
+* To check this Go the Chrome Inspector and check in Network tab
+    * JS bundle contains the React code
+
+### Navigating with React Router
+* Import Link from react-router-dom
+* This Link replaces the anchor tag
+* With Link tag, we do not use href but *to*
+* npm start and check in Network tab
+* We observe we are not reloading the application at all
+* If we inspect the link, we see that internally it is an anchor tag
+* React-router prevents the browser from navigating to the new page
+* Diagram 18-link: What We Want
+* This is where the term **Single Page App(SPA)** comes from
+    * We are loading a single HTML document
+    * Even when navigating, they are using the same HTML document
