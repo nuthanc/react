@@ -45,3 +45,24 @@
 * This is where the term **Single Page App(SPA)** comes from
     * We are loading a single HTML document
     * Even when navigating, they are using the same HTML document
+
+### Different Router Types
+* In addition to BrowserRouter, there are other types also
+* Diagram 21-ro: Different Router types
+* If HashRouter is used and we open localhost:3000, the # symbol is added automatically
+* In MemoryRouter, even when links are clicked, the url doesn't change but navigation still occurs
+* BrowserRouter is the most complicated Router type to deploy
+* Traditional Server
+    * Diagram 20-trad: 
+        * Server that returns HTML as opposed to React Application
+    * Diagram 21-trad: No route
+* React Dev Server: npm start Launches this server
+    * Diagram 19-br
+    * Network tab:
+        * bundle.js: dev resources
+        * public dir: Inside our application's public dir which can be accessed like localhost:3000/favicon.ico
+    * We have nothing defined inside for Page Two
+    * The main key of React Dev Server is it returns a **index.html** file instead of 404 Error
+    * This is important because all the route definitions are mentioned on the **client(JS) side**
+* With HashRouter, since # is added to URL, it ignores everything after the hash and only localhost is considered
+    * Anything after the hash is for the client side to handle
