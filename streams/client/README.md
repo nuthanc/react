@@ -72,3 +72,7 @@
 * Diagram 24-routes: 
 * For different components related to streams, create streams folder within components
     * Create 5 files for CRUD and show
+
+### Wiring Up Routes
+* In App.js, import the different streams
+* Add Route in BrowserRouter
