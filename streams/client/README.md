@@ -66,3 +66,9 @@
     * This is important because all the route definitions are mentioned on the **client(JS) side**
 * With HashRouter, since # is added to URL, it ignores everything after the hash and only localhost is considered
     * Anything after the hash is for the client side to handle
+
+### Component Scaffolding
+* Diagram 22-com: Different components and routes
+* Diagram 24-routes: 
+* For different components related to streams, create streams folder within components
+    * Create 5 files for CRUD and show
