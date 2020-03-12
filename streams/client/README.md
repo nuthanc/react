@@ -86,3 +86,18 @@
 * In Header.js Importing only Link from 'react-router-dom' and then npm start
 * We see the following error:
     * You should not use **< Link >** outside a < Router >
+
+### Links Inside Routers
+* If anytime, we try to use the Link tag outside the Router, we see the previous mentioned error
+* Migrate our architecture to what we see in Diagram 12-vis
+* Easy solution is to move the Header component within the BrowserRouter
+
+### OAuth based Authentication
+* Diagram Link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F14%2Fdiagrams.xml
+* Diagram 1: auth
+* Diagram 3: Auth types
+* Scopes with OAuth: Diagram 3
+    * How to get access to Users account
+    * Go to google oauth scopes list and then search for the particular scope like gmail, profile etc
+* Diagram 2- OAuth flow
+
