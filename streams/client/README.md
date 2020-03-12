@@ -38,7 +38,7 @@
 * This Link replaces the anchor tag
 * With Link tag, we do not use href but *to*
 * npm start and check in Network tab
-* We observe we are not reloading the application at all
+* We observe we are not reloading the application at all with Link tag
 * If we inspect the link, we see that internally it is an anchor tag
 * React-router prevents the browser from navigating to the new page
 * Diagram 18-link: What We Want
@@ -68,7 +68,7 @@
     * Anything after the hash is for the client side to handle
 
 ### Component Scaffolding
-* Diagram 22-com: Different components and routes
+* Diagram 22-com: **Different components and routes**
 * Diagram 24-routes: 
 * For different components related to streams, create streams folder within components
     * Create 5 files for CRUD and show
@@ -76,3 +76,13 @@
 ### Wiring Up Routes
 * In App.js, import the different streams
 * Add Route in BrowserRouter
+* Diagram 11-c: **Component Hierarchy**
+
+### Connecting the Header
+* For the Header to show up all the time, it is kept outside the BrowserRouter in App Component
+* Wire up Semantic-ui in public/index.html
+* Create Header.js inside the components directory and wire it up in App.js
+* We'll add some classes from semantic-ui
+* In Header.js Importing only Link from 'react-router-dom' and then npm start
+* We see the following error:
+    * You should not use **< Link >** outside a < Router >
