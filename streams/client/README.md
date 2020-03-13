@@ -99,5 +99,7 @@
 * Scopes with OAuth: Diagram 3
     * How to get access to Users account
     * Go to google oauth scopes list and then search for the particular scope like gmail, profile etc
-* Diagram 2- OAuth flow
 
+### OAuth for Servers vs Browser Apps
+* Diagram 2: OAuth flow
+* Diagram 5: Flow
