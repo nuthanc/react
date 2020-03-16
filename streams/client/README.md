@@ -103,3 +103,31 @@
 ### OAuth for Servers vs Browser Apps
 * Diagram 2: OAuth flow
 * Diagram 5: Flow
+
+### Creating OAuth credentials
+* Diagram 06-flow: 
+    * Create a new project
+    * Go to APIs & Services -> OAuth consent screen 
+    * Fill the Application name and then Save
+    * Go to credentials -> Create Credentials -> OAuth Client Id
+    * Select Web Application
+    * Put http://localhost:3000 in Authorized JS origins and enter
+    * Click on Create
+    * Copy the Client ID:1077856755760-ojqjiumtf2og3thd34jj9pl1mmob0afi.apps.googleusercontent.com
+
+#### Wiring Up Google API library
+* In public/index.html and inside the head tag, add the script tag
+* To verify, go to Browser -> Console and then type gapi
+* In components, create GoogleAuth.js
+* Hook up GoogleAuth component in Header.js
+* Google API is super popular that it is used in many sites
+* So they try keep it as small as possible
+* To get our required functionality, we need to *load*, in our case gapi.load('client:auth2')
+* We check this in our Network tab and execute the above line
+* Now, if gapi is typed in console, we see there are some additional properties inside that object
+* Then we can *register* on initialize it with our OAuth client Id
+* We only want to register one time, so we put that in componentDidMount method
+* gapi is a variable available within *window* scope
+* Load takes some amount of time, so we register 2nd argument as a callback 
+* While initializing, we give the clientId and the scope
+* The scope is about Diagram 4-scopes
