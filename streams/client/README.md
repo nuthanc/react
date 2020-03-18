@@ -143,3 +143,11 @@ auth // To check all the methods
 auth.signIn()
 auth.isSignedIn.get()
 ```
+
+### Rendering Authentication Status
+* Flow: Diagram 08-googleauth
+* init returns a Promise, then chain can be used after initialization is complete
+* Update component level state so that App can be re-rendered
+* Since we are using component level state, we need to initialize it
+* Helper method: renderAuthButton()
+* We need to refresh the page to check SignIn and SignOut
