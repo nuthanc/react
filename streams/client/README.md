@@ -131,3 +131,15 @@
 * Load takes some amount of time, so we register 2nd argument as a callback 
 * While initializing, we give the clientId and the scope
 * The scope is about Diagram 4-scopes
+
+### Sending a User into OAuth flow
+* Diagram Link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F14%2Fdiagrams.xml
+* Diagram 7: Doc link
+* Checkout Authentication section
+* In Chrome console
+```javascript
+const auth = gapi.auth2.getAuthInstance()
+auth // To check all the methods
+auth.signIn()
+auth.isSignedIn.get()
+```
