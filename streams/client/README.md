@@ -165,3 +165,6 @@ gapi.auth2.getAuthInstance().isSignedIn
 * Internally, gapi uses inheritance
 * So we'll use listen in then chain
 * Add onAuthChange as an arrow function so that it's context is bound to the component
+
+### Displaying Sign In and Sign Out Buttons
+* Words to Buttons in renderAuthButton
