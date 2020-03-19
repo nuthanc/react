@@ -151,3 +151,17 @@ auth.isSignedIn.get()
 * Since we are using component level state, we need to initialize it
 * Helper method: renderAuthButton()
 * We need to refresh the page to check SignIn and SignOut
+
+### Updating Auth State
+* In Chrome console
+```javascript
+// To check all the methods
+gapi.auth2.getAuthInstance().isSignedIn
+// We see listen in proto
+``` 
+* We don't see the get function there, we see __proto__ Object
+* This proto object is how we do inheritance in JS
+* JS doesn't have classes but prototypes
+* Internally, gapi uses inheritance
+* So we'll use listen in then chain
+* Add onAuthChange as an arrow function so that it's context is bound to the component
