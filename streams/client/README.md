@@ -173,3 +173,12 @@ gapi.auth2.getAuthInstance().isSignedIn
 * Two helper functions  onSignIn and onSignOut
 * Add onClick event handler to button
     * We don't want to add parenthesis to onClick as it will be called when the Component is rendered and not on clicked
+
+### Redux Architecture Design
+* **Diagram 9-signin:** Integration with Redux
+* Action creators: Successfully signed in or Successfully signed out
+* Why we want to Redux?
+    * Cause we want the status in a centralized store which any component can access
+* This refactoring is kind of awkward for GoogleAuth component as it's state goes to a series of other components before coming back, when in reality we can obtain through one step
+* Alternate flow with proper redux convention: Diagram 10-alt, we don't want this as it scatters GoogleAuthentication all over the place
+
