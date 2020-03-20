@@ -168,3 +168,8 @@ gapi.auth2.getAuthInstance().isSignedIn
 
 ### Displaying Sign In and Sign Out Buttons
 * Words to Buttons in renderAuthButton
+
+### OnDemand Sign In and Sign Out
+* Two helper functions  onSignIn and onSignOut
+* Add onClick event handler to button
+    * We don't want to add parenthesis to onClick as it will be called when the Component is rendered and not on clicked
