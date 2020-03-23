@@ -189,3 +189,10 @@ gapi.auth2.getAuthInstance().isSignedIn
 * Within reducers' index.js, create dummy reducer within combineReducers
 * In root index.js file, import Provider, createStore, reducers
 * Wrap App component with Provider passing store as prop
+
+### Connecting Auth with Action Creators
+* In index.js of actions dir, create signIn and signOut action creators
+* In GoogleAuth file, import connect, signIn and signOut
+* At the bottom, wrap the connect call
+* The callback function onAuthChange actually gets called with a boolean argument
+* Call signIn and signOut within onAuthChange 
