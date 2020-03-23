@@ -182,3 +182,10 @@ gapi.auth2.getAuthInstance().isSignedIn
 * This refactoring is kind of awkward for GoogleAuth component as it's state goes to a series of other components before coming back, when in reality we can obtain through one step
 * Alternate flow with proper redux convention: Diagram 10-alt, we don't want this as it scatters GoogleAuthentication all over the place
 
+### Redux Setup
+* npm install redux react-redux
+* Create new folders within src called actions and reducers
+* Create index.js within that
+* Within reducers' index.js, create dummy reducer within combineReducers
+* In root index.js file, import Provider, createStore, reducers
+* Wrap App component with Provider passing store as prop
