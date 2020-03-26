@@ -205,3 +205,10 @@ gapi.auth2.getAuthInstance().isSignedIn
 * Remember the ... syntax for creating a new state and then overriding the isSignedIn value
 * Then in reducers index.js file, import authReducer
 * Export the auth reducer as key and value
+
+### Handling Auth Status Through Redux
+* In GoogleAuth.js, add mapStateToProps function
+* Take off component level state
+    * Remove state initialization at the top of the class
+    * Dispatch action in 'then' statement and remove setState
+    * In renderAuthButton, change state to props
