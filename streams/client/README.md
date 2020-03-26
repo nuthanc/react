@@ -196,3 +196,12 @@ gapi.auth2.getAuthInstance().isSignedIn
 * At the bottom, wrap the connect call
 * The callback function onAuthChange actually gets called with a boolean argument
 * Call signIn and signOut within onAuthChange 
+
+### Building the Auth Reducer
+* Create authReducer within reducers dir
+* We are using object as default value instead of boolean because we will be using one more property
+* state will be having a default value of null isSignedIn
+* All uppercase syntax, meaning do not modify
+* Remember the ... syntax for creating a new state and then overriding the isSignedIn value
+* Then in reducers index.js file, import authReducer
+* Export the auth reducer as key and value
