@@ -212,3 +212,8 @@ gapi.auth2.getAuthInstance().isSignedIn
     * Remove state initialization at the top of the class
     * Dispatch action in 'then' statement and remove setState
     * In renderAuthButton, change state to props
+
+### Fixed Action Types
+* New file in actions called types.js
+* Using constants to catch the error in case of missed letters
+* Then in actions index.js and reducers authReducer.js, import and use those constants
