@@ -217,3 +217,20 @@ gapi.auth2.getAuthInstance().isSignedIn
 * New file in actions called types.js
 * Using constants to catch the error in case of missed letters
 * Then in actions index.js and reducers authReducer.js, import and use those constants
+
+### Recording the Users ID
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F13%2Fdiagrams.xml
+* Entire idea of our application: Diagram 01-arch
+    * Orange API server that stores the list of all the streams created by our users
+    * Diagram 01-mockups
+* npm start and in Chrome Console(Make sure you are signed in)
+```js
+gapi.auth2.getAuthInstance().currentUser
+
+gapi.auth2.getAuthInstance().currentUser.get().getId()
+```
+* In GoogleAuth component, in onAuthChange()
+    * Pass id to Action creator
+* Then in action's index.js file, create the payload using the argument in signIn action
+* Then in authReducer, add userId to INITIAL_STATE and update the state while returning
+* When a user signs out, they don't want to be associated with our application
