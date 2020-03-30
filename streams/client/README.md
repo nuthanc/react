@@ -234,3 +234,12 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Then in action's index.js file, create the payload using the argument in signIn action
 * Then in authReducer, add userId to INITIAL_STATE and update the state while returning
 * When a user signs out, they don't want to be associated with our application
+
+### Using Redux Dev Tools to Inspect the Store
+* Diagram 22-c
+* https://github.com/zalmoxisus/redux-devtools-extension
+* The above is Chrome extension for debugging Redux store
+* Add it to Chrome and then in the github link, scroll down to Advanced store setup
+* Then add that in root index.js file and then npm start
+* In Chrome, you should the ReduxDevTools being active
+* You can use Action history to jump back in time and observe the states
