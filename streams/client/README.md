@@ -243,3 +243,11 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Then add that in root index.js file and then npm start
 * In Chrome, you should the ReduxDevTools being active
 * You can use Action history to jump back in time and observe the states
+
+### Debug Sessions with Redux Dev Tools
+* Diagram Link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F14%2Fdiagrams.xml
+* Diagram 12-tools: 
+    * By default when Refreshed, all the data is cleared away
+    * But when we enable the debug session, data is persisted
+    * Also named sessions can be used for different purposes
+    * After you are done debugging, remove that query string
