@@ -264,3 +264,9 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Documentation link: redux-form.com
 * Checkout Examples section: https://redux-form.com/7.4.2/examples/
 * Wizard Form, some point in the future
+
+### Connecting Redux Form
+* Diagram 02: With **Redux form behind the scenes**
+* In reducers index.js, import reducer from redux-form
+* Rename reducer by using as
+* Assign it to a very particular key called form
