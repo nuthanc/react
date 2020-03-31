@@ -258,4 +258,9 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * npm install redux-form
 * Diagram Link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F15%2Fdiagrams.xml
 * Diagram 01-redux form: Without Redux forms
-* Diagram 02: With Redux form behind the scenes
+* Diagram 02: With **Redux form behind the scenes**
+
+### Useful Redux Form Examples
+* Documentation link: redux-form.com
+* Checkout Examples section: https://redux-form.com/7.4.2/examples/
+* Wizard Form, some point in the future
