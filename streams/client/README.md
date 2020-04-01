@@ -270,3 +270,17 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * In reducers index.js, import reducer from redux-form
 * Rename reducer by using as
 * Assign it to a very particular key called form
+
+### Creating Forms
+* npm start and navigate to /streams/new
+* In components/streams, refactor StreamCreate.js to class based component
+* Import Field(component) and reduxForm(function) from redux-form
+* reduxForm will have same functionality as connect function
+* reduxForm will return a function and we are gonna call that function using StreamCreate as argument
+* reduxForm takes a single object as argument
+    * form which is the name of the form which serves the purpose of the form
+    * After adding reduxForm, we'll got a ton of props
+* Field Component requires a name prop, which is the name of the property that this Field is going to manage
+* General form error:
+    * Element type is invalid, expected a string (for built-in components) or a class/function (for composite components) but got: undefined
+
