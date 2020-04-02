@@ -283,4 +283,12 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Field Component requires a name prop, which is the name of the property that this Field is going to manage
 * General form error:
     * Element type is invalid, expected a string (for built-in components) or a class/function (for composite components) but got: undefined
+    * The Field component by itself doesn't know how to show the input
 
+### Automatically Handling Events
+* The Field is just a part of the form infrastructure
+* We need to pass the component prop, to actually show the form element
+* Just input tag only isn't a controlled element
+    * Need to assign value property and onChange callback handler
+* To convert to controlled element, we need to use the formProps passed as argument
+* Short JSX syntax in renderInput where everything from formProps.input is added as properties to input element
