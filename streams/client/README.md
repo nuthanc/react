@@ -299,3 +299,12 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Adding prop of label to identify
 * Props which are not known to the component are by default passed to the component(which is renderInput in this case) and can be received as additional property in renderInput
 * className of ui form in render method for proper spacing
+
+### Handling Form Submission
+* Helper method onSubmit in StreamCreate
+* Print this.props inside render method to check out all the properties
+* Add onSubmit prop to the form element
+* To onSubmit, usually pass this.onSubmit, but with redux-form, things are a little different
+* We pass this.props.handleSubmit(this.onSubmit)
+* handleSubmit will automatically take care of event.preventDefault and doesn't pass event to onSubmit 
+* But the values of the Field will be passed to onSubmit
