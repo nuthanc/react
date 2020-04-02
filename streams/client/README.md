@@ -307,4 +307,4 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * To onSubmit, usually pass this.onSubmit, but with redux-form, things are a little different
 * We pass this.props.handleSubmit(this.onSubmit)
 * handleSubmit will automatically take care of event.preventDefault and doesn't pass event to onSubmit 
-* But the values of the Field will be passed to onSubmit
+* But the values of the form will be passed to onSubmit
