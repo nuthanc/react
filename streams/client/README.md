@@ -312,8 +312,18 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 ### Validation of Form Inputs
 * Empty object on clicking Submit when none of the Fields are entered
 * Diagram Link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F15%2Fdiagrams.xml
-* Diagram 04-flow:
+* **Diagram 04-flow:**
 * In StreamCreate.js, outside the StreamCreate class, create validate arrow function which has the argument formValues
 * This formValues contains all the values existing within our form(like title and description in our case)
 * If **empty object** is returned, redux-form thinks everything is ok, else there is an error
 
+### Displaying Validation Messages
+* validate needs to be wired up to redux-form in the reduxForm of StreamCreate
+* Since key and value is same, we can reduce
+```js
+//validate: validate to validate
+```
+* Redux-form automatically rerenders our form when there are keys in error object
+* Redux-form will look at the name property of Field with error object's key
+* If it's the same it's gonna pass to the Field component prop(which is renderInput)
+* Destructure meta in renderInput method
