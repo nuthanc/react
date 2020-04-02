@@ -293,3 +293,9 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * To convert to controlled element, we need to use the formProps passed as argument
 * Short JSX syntax in renderInput where everything from formProps.input is added as properties to input element
 * Shorten even feature by destructuring formProps
+
+### Customizing Form Fields
+* Customizing renderInput
+* Adding prop of label to identify
+* Props which are not known to the component are by default passed to the component(which is renderInput in this case) and can be received as additional property in renderInput
+* className of ui form in render method for proper spacing
