@@ -308,3 +308,12 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * We pass this.props.handleSubmit(this.onSubmit)
 * handleSubmit will automatically take care of event.preventDefault and doesn't pass event to onSubmit 
 * But the values of the form will be passed to onSubmit
+
+### Validation of Form Inputs
+* Empty object on clicking Submit when none of the Fields are entered
+* Diagram Link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F15%2Fdiagrams.xml
+* Diagram 04-flow:
+* In StreamCreate.js, outside the StreamCreate class, create validate arrow function which has the argument formValues
+* This formValues contains all the values existing within our form(like title and description in our case)
+* If **empty object** is returned, redux-form thinks everything is ok, else there is an error
+
