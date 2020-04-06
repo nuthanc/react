@@ -356,3 +356,8 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Browser to API server with details of the New Stream
 * Diagram 2-arch: Further details of API server
     * Plain list of records
+
+### RESTful Conventions
+* Package to help us put together API server: json-server
+* npmjs.com/package/json-server
+* Diagram 5-rest, 4-crud: REST
