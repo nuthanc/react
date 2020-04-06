@@ -327,3 +327,20 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Redux-form will look at the name property of Field with error object's key
 * If it's the same it's gonna pass to the Field component prop(which is renderInput)
 * Destructure meta in renderInput method
+* Console log meta to check its properties
+
+### Showing Errors on Touch
+* When clicked, the blue boundary indicates that the field is focused
+* When clicked anywhere outside, that blue boundary disappears
+* AutoComplete can be turned off in input field
+* Print meta to check its properties
+* Our property of interest is *touched*
+* When touched is true, the user selected and then deselected
+* renderError helper method
+* We get some error and this is caused due to context inside JS classes
+    * renderInput is a function that we pass to Field component
+    * It's called with unknown value of this
+    * Fix it by turning renderInput to an arrow function
+* npm start and we don't see any Error message after selecting and deselecting
+* Open Chrome console, Inspect by clicking the Title Input
+* Semantic UI will by default hide error messages, as shown in the CSS display panel as display:none
