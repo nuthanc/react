@@ -349,3 +349,10 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Form should have class name of *error* to display error messages
 * To highlight errored fields, a classname of error can be given to renderInput div according to some logic
 
+### Creating Streams
+* Diagram Link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F16%2Fdiagrams.xml
+* Diagram 1-arch: **Architecture**
+    * Our Application is running inside the Viewer's Browser
+* Browser to API server with details of the New Stream
+* Diagram 2-arch: Further details of API server
+    * Plain list of records
