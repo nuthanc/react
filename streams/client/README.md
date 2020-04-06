@@ -343,4 +343,9 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
     * Fix it by turning renderInput to an arrow function
 * npm start and we don't see any Error message after selecting and deselecting
 * Open Chrome console, Inspect by clicking the Title Input
-* Semantic UI will by default hide error messages, as shown in the CSS display panel as display:none
+* **Semantic UI will by default hide error messages**, as shown in the CSS display panel as display:none
+
+### Highlighting Errored Fields
+* Form should have class name of *error* to display error messages
+* To highlight errored fields, a classname of error can be given to renderInput div according to some logic
+
