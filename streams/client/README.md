@@ -361,3 +361,15 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Package to help us put together API server: json-server
 * npmjs.com/package/json-server
 * Diagram 5-rest, 4-crud: REST
+
+### Setting Up an API Server
+* Create api directory inside streams and Navigate to it
+* npm init and Enter for everything
+* npm i json-server
+* npmjs.com/package/json-server documentation
+* Check db.json Example file
+* Checkout README.md in api directory
+* In the future, npm start at both **client and api**
+
+
+
