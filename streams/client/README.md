@@ -371,5 +371,12 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Checkout README.md in api directory
 * In the future, npm start at both **client and api**
 
-
-
+### Creating Streams Through Action Creators
+* When form is submitted, an Ajax request or Network request to our API 
+* In client directory, npm i axios redux-thunk
+* Create apis under src directory and create streams.js inside apis
+* In actions index.js, import streams from apis
+* Create createStreams action creator, which accepts all the formValues
+* Asynchronous action creator using redux-thunk
+* Check only posting to the api
+* Then in StreamCreate.js, import connect and need to hook up connect
