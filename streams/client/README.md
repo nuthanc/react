@@ -380,3 +380,12 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Asynchronous action creator using redux-thunk
 * Check only posting to the api
 * Then in StreamCreate.js, import connect and need to hook up connect
+
+### Creating a Stream with REST conventions
+* Remove export default in StreamCreate and create formWrapped
+* Then in onSubmit, call createStream action creator
+* Then in root index.js file, wire up redux-thunk
+* npm start in both client and api
+* Pull up Network requests in Chrome, filter by XHR
+* Error because we didn't bind the callback function onSubmit with an arrow function
+* After submitting, we see that entry in api db.json
