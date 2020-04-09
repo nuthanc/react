@@ -389,3 +389,8 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Pull up Network requests in Chrome, filter by XHR
 * Error because we didn't bind the callback function onSubmit with an arrow function
 * After submitting, we see that entry in api db.json
+
+### Dispatching Actions After Stream Creation
+* Complete the await in createStream action creator
+* In types.js file, export CREATE_STREAM
+* In actions index.js, import CREATE_STREAM and dispatch the action
