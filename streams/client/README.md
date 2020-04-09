@@ -394,3 +394,10 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Complete the await in createStream action creator
 * In types.js file, export CREATE_STREAM
 * In actions index.js, import CREATE_STREAM and dispatch the action
+
+### Bulk Action Creators
+* Diagram Link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F16%2Fdiagrams.xml
+* Diagram 5-ac: Response column
+* Creating all Action creators now due to the RESTful convention
+* Create types in types.js file
+* Action creators for each one in actions index.js
