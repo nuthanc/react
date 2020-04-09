@@ -401,3 +401,9 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Creating all Action creators now due to the RESTful convention
 * Create types in types.js file
 * Action creators for each one in actions index.js
+
+### ObjectBased Reducers
+* Diagram 6-reducer: Reducer structure 1
+* Diagram 10-option: Reducer structure 2
+* Diagram 7-reducer: Reducer Good practices
+    * Updating easy with *object* than with an *array*
