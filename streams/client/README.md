@@ -421,3 +421,10 @@ return { ...state, [action.payload.id]: action.payload };
 ### Handling Fetching Creating and Updating
 * Create streamReducer.js in reducers
 * Diagram 5-ac: Different reducers to different types
+
+### Deleting Properties with Omit
+* Diagram 7-reducer: Omit from lodash
+* npm install lodash
+* In streamReducer import lodash
+* action.payload contains only id in case of DELETE_STREAM
+* omit creates a new object with the key removed
