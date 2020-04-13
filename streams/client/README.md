@@ -417,3 +417,7 @@ return newState;
 //The above 3 can be replaced with
 return { ...state, [action.payload.id]: action.payload };
 ```
+
+### Handling Fetching Creating and Updating
+* Create streamReducer.js in reducers
+* Diagram 5-ac: Different reducers to different types
