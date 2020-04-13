@@ -407,3 +407,13 @@ gapi.auth2.getAuthInstance().currentUser.get().getId()
 * Diagram 10-option: Reducer structure 2
 * Diagram 7-reducer: Reducer Good practices
     * Updating easy with *object* than with an *array*
+
+### Key Interpolation Syntax
+```js
+const newState = { ...state };
+newState[action.payload.id] = action.payload;
+return newState;
+
+//The above 3 can be replaced with
+return { ...state, [action.payload.id]: action.payload };
+```
