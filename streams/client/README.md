@@ -428,3 +428,10 @@ return { ...state, [action.payload.id]: action.payload };
 * In streamReducer import lodash
 * action.payload contains only id in case of DELETE_STREAM
 * omit creates a new object with the key removed
+
+### Merging Lists of Records
+* Diagram Link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F16%2Fdiagrams.xml
+* Diagram 13-mapkeys:
+* mapKeys returns an object
+* ... Take key-value pairs from the mapKeys object and add it to the new big object
+* Then in reducers index.js file, import streamReducer and add it as property in combineReducers
