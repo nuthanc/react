@@ -435,3 +435,10 @@ return { ...state, [action.payload.id]: action.payload };
 * mapKeys returns an object
 * ... Take key-value pairs from the mapKeys object and add it to the new big object
 * Then in reducers index.js file, import streamReducer and add it as property in combineReducers
+
+### Fetching a List of All Streams
+* In components StreamList.js, import connect and fetchStreams
+* We want componentDidMount lifecycle method, so turning into a class-based component
+* mapStateToProps still not added
+* At this point, just want to see list in Redux-dev-tools of Chrome
+* So, with npm start in api and client, go to Home or Root page and open Redux-dev-tools and open State
