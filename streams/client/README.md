@@ -442,3 +442,10 @@ return { ...state, [action.payload.id]: action.payload };
 * mapStateToProps still not added
 * At this point, just want to see list in Redux-dev-tools of Chrome
 * So, with npm start in api and client, go to Home or Root page and open Redux-dev-tools and open State
+
+### Rendering All Streams
+* Diagram Link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F13%2Fdiagrams.xml
+* Diagram 01 - mockups:
+* Define mapStateToProps in StreamList
+    * object to array (Object.values)
+* https://stackoverflow.com/questions/31284169/parse-error-adjacent-jsx-elements-must-be-wrapped-in-an-enclosing-tag
