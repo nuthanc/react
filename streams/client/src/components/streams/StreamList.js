@@ -32,6 +32,8 @@ class StreamList extends React.Component {
 }
 
 const mapStateToProps = (state) => {
+  console.log("Streams in mapstop", state.streams);
+  console.log("AFter object.values", Object.values(state.streams));
   return { streams: Object.values(state.streams) };
 };
 
