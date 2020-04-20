@@ -474,3 +474,13 @@ return { ...state, [action.payload.id]: action.payload };
 * To make button on far right-hand side, manually add style property in div
 * Call it in render method
 
+### When to Navigate Users
+* npm start and Chrome Network requests XHR in /streams/new page
+* Unexpected behaviour of not navigating/notification after Stream was created
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F16%2Fdiagrams.xml
+* Diagram 16-intent: Programmatic Navigation
+* Diagram 17-soon: 
+* Diagram 18-time:
+* Navigate from createStream Action creator after a successful api response
+
+
