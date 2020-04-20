@@ -464,3 +464,13 @@ return { ...state, [action.payload.id]: action.payload };
 * renderAdmin helper method and call it from renderList
 * Test using npm start
 * For Edit/Delete Buttons to appear properly, need to move them at the very start of renderList div with className item
+
+### Linking to Stream Creation
+* renderCreate helper method in StreaList
+* currentUserId can be used, but we already have a specific attribute doing that(isSignedIn)
+* Add isSignedIn to mapStateToProps
+* For navigating we use Link component instead of anchor tag
+* So import Link and use it with to attribute
+* To make button on far right-hand side, manually add style property in div
+* Call it in render method
+
