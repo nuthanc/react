@@ -457,3 +457,10 @@ return { ...state, [action.payload.id]: action.payload };
 * So in createStream of actions index.js, add getState and destructure userId
 * Check redux store if you don't remember the state
 * Then npm start and navigate to streams/new
+
+### Conditionally Showing Edit and Delete 
+* Streams created by me have buttons on it
+* In StreamList.js, expand state of mapStateToProps to get currentUserId
+* renderAdmin helper method and call it from renderList
+* Test using npm start
+* For Edit/Delete Buttons to appear properly, need to move them at the very start of renderList div with className item
