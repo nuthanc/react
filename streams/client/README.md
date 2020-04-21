@@ -483,4 +483,14 @@ return { ...state, [action.payload.id]: action.payload };
 * Diagram 18-time:
 * Navigate from createStream Action creator after a successful api response
 
+### History Preferences
+* Diagram 14-nav: 
+* Diagram 16-arch:
+* Internally, *BrowserRouter creates the History object*
+* When BrowserRouter renders some Component, BrowserRouter passes the history object passes as prop to the Component
+* But we need history object inside Action Creator and not Component which is actually difficult
+* Diagram 17-ac: Pass history from Component to Action creator
+    * But this is not ideal
+* **Diagram 15-hist:** Plain router with history creation
+* History object: Everything after the port or domain
 
