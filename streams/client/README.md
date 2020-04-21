@@ -494,3 +494,8 @@ return { ...state, [action.payload.id]: action.payload };
 * **Diagram 15-hist:** Plain router with history creation
 * History object: Everything after the port or domain
 
+### Creating a Browser History Object
+* Create new file called history.js in src directory
+* history package automatically installed with react-router-dom
+* And only 2 statements, that's it
+* In components App.js file, replace BrowserRouter with Router
