@@ -503,3 +503,7 @@ return { ...state, [action.payload.id]: action.payload };
 ### Implementing Programmatic Navigation
 * In actions index.js, import history
 * In createStream action, history push the new route we want to navigate to
+
+### Manually changing API records
+* Navigate to api directory
+* Remove the entries from db.json file
