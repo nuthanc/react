@@ -499,3 +499,7 @@ return { ...state, [action.payload.id]: action.payload };
 * history package automatically installed with react-router-dom
 * And only 2 statements, that's it
 * In components App.js file, replace BrowserRouter with Router
+
+### Implementing Programmatic Navigation
+* In actions index.js, import history
+* In createStream action, history push the new route we want to navigate to
