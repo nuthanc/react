@@ -507,3 +507,8 @@ return { ...state, [action.payload.id]: action.payload };
 ### Manually changing API records
 * Navigate to api directory
 * Remove the entries from db.json file
+
+### URLBased Selection
+* Diagram 24-url:
+* Diagram 22-e:
+* D 23-url:
