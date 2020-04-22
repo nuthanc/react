@@ -522,3 +522,10 @@ return { ...state, [action.payload.id]: action.payload };
 * In StreamEdit component, add props and console log it to check
 * All props are coming from React-router-dom
 * StreamEdit rendered by Route
+
+### Selecting Records from State
+* Import connect and wire up mapStateToProps in StreamEdit
+* ownProps has the same reference to props within StreamEdit
+* Check console.log of props after mapStateToProps is defined
+* stream shows as undefined
+* When directly the StreamEdit page is loaded, it appears as if there is no data, but when coming from StreamList to StreamEdit, we see that stream is defined now
