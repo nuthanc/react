@@ -516,3 +516,9 @@ return { ...state, [action.payload.id]: action.payload };
 ### Wildcard Navigation
 * In StreamList component, update renderAdmin with Link instead of button
 * In App.js file, :id in StreamEdit Route
+* After the colon can be anything, but we reference the same variable within the Component prop
+
+### More on Route Params
+* In StreamEdit component, add props and console log it to check
+* All props are coming from React-router-dom
+* StreamEdit rendered by Route
