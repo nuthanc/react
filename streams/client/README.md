@@ -512,3 +512,7 @@ return { ...state, [action.payload.id]: action.payload };
 * Diagram 24-url:
 * Diagram 22-e:
 * D 23-url:
+
+### Wildcard Navigation
+* In StreamList component, update renderAdmin with Link instead of button
+* In App.js file, :id in StreamEdit Route
