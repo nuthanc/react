@@ -511,7 +511,7 @@ return { ...state, [action.payload.id]: action.payload };
 ### URLBased Selection
 * Diagram 24-url:
 * Diagram 22-e:
-* D 23-url:
+* Diagram 23-url:
 
 ### Wildcard Navigation
 * In StreamList component, update renderAdmin with Link instead of button
@@ -529,3 +529,10 @@ return { ...state, [action.payload.id]: action.payload };
 * Check console.log of props after mapStateToProps is defined
 * stream shows as undefined
 * When directly the StreamEdit page is loaded, it appears as if there is no data, but when coming from StreamList to StreamEdit, we see that stream is defined now
+
+### Component Isolation with React Router
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F16%2Fdiagrams.xml
+* **Diagram 25-path:**
+* Obey this rule in Diagram 26-fetch:
+
+
