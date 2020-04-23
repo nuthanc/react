@@ -535,4 +535,8 @@ return { ...state, [action.payload.id]: action.payload };
 * **Diagram 25-path:**
 * Obey this rule in Diagram 26-fetch:
 
+### Fetching a Stream for Edit Stream
+* In StreamEdit component, refactor to Class based component
+* import fetchStream and pass it to connect and access it in componentDidMount to fetch the streams
+
 

@@ -6,7 +6,6 @@ import {
   CREATE_STREAM,
   DELETE_STREAM,
 } from '../actions/types';
-import streams from '../apis/streams';
 
 export default (state = {}, action) => {
   switch (action.type) {
