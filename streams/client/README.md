@@ -539,4 +539,11 @@ return { ...state, [action.payload.id]: action.payload };
 * In StreamEdit component, refactor to Class based component
 * import fetchStream and pass it to connect and access it in componentDidMount to fetch the streams
 
+### Real Code Reuse
+* From App mockup Diagram, we see that CreateStream and EditStream is same except the data and the Action creator
+* Diagram 21-edit:
+* Create StreamForm in components->streams
+* Copy everything from StreamCreate and copy to StreamForm
+* No need to pass Action Creator in connect, in fact no need of connect function at all
+* onSubmit is passed as prop
 
