@@ -560,6 +560,9 @@ return { ...state, [action.payload.id]: action.payload };
 * Define onSubmit function
 * Return appropriate JSX in render method
 * Pass editStream to connect
-
+* Pass special property called initialValues to StreamForm
+* Second set of parenthesis for object
+* title and description should be same as what is defined in StreamForm Field
+* Pass this.props.stream to initialValues which has title and description as properties
 
 
