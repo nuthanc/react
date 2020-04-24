@@ -551,3 +551,15 @@ return { ...state, [action.payload.id]: action.payload };
 * In StreamCreate, no need of Field and Redux form
 * Import StreamForm and delete renderError, renderInput, validate and formWrapped
 * All JSX removed from render
+
+### Setting Initial Values
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F16%2Fdiagrams.xml
+* Diagram 22-edit: **Redux-form wrapped StreamForm**
+* In StreamEdit, import editStream also from actions
+* Import StreamForm
+* Define onSubmit function
+* Return appropriate JSX in render method
+* Pass editStream to connect
+
+
+
