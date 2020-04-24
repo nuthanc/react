@@ -547,3 +547,7 @@ return { ...state, [action.payload.id]: action.payload };
 * No need to pass Action Creator in connect, in fact no need of connect function at all
 * onSubmit is passed as prop
 
+### Refactoring Stream Creation
+* In StreamCreate, no need of Field and Redux form
+* Import StreamForm and delete renderError, renderInput, validate and formWrapped
+* All JSX removed from render
