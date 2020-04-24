@@ -565,4 +565,12 @@ return { ...state, [action.payload.id]: action.payload };
 * title and description should be same as what is defined in StreamForm Field
 * Pass this.props.stream to initialValues which has title and description as properties
 
+### Avoiding Changes to Properties
+* Technicality problem as id and userId was also passed
+* formValues must only contain properties that are supposed to change in the form
+* The real issue is we are putting the entire stream in initialValues
+* So, to handle this import lodash and use pick
+* pick creates a new object
+* Check in ReduxDev tools form->streamForm->values
+
 
