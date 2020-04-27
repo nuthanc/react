@@ -587,3 +587,12 @@ return { ...state, [action.payload.id]: action.payload };
 * Diagram 5-ac:
 * PUT request has a side effect as it replaces
 * So in editStreams action creator, make a patch request instead of put request
+
+### Why Use Portals
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F17%2Fdiagrams.xml
+* Diagram 1-mocks: DeleteStream
+* Show a Modal window to the User
+* Diagram 2-nesting: **Traditional React layout**
+* Diagram 3-modal:
+* Create modal.html in public directory
+* Access this modal inside the browser using localhost:3000/modal.html
