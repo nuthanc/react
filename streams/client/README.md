@@ -573,4 +573,8 @@ return { ...state, [action.payload.id]: action.payload };
 * pick creates a new object
 * Check in ReduxDev tools form->streamForm->values
 
-
+### Edit Form Submissions
+* In StreamEdit, need to change onSubmit
+* In actions index.js, need to navigate to root directory after successful edit
+* npm start and test it
+* But after edit, the buttons disappear
