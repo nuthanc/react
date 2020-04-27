@@ -578,3 +578,12 @@ return { ...state, [action.payload.id]: action.payload };
 * In actions index.js, need to navigate to root directory after successful edit
 * npm start and test it
 * But after edit, the buttons disappear
+
+### PUT vs PATCH Requests
+* To checkt the previous error, Chrome console-> Network tab in root page
+* Check GET streams
+* Since userId is missing, the buttons don't appear
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F16%2Fdiagrams.xml
+* Diagram 5-ac:
+* PUT request has a side effect as it replaces
+* So in editStreams action creator, make a patch request instead of put request
