@@ -596,3 +596,16 @@ return { ...state, [action.payload.id]: action.payload };
 * Diagram 3-modal:
 * Create modal.html in public directory
 * Access this modal inside the browser using localhost:3000/modal.html
+
+### More on Using Portals
+* Outer div of modal serves as grey background
+* Inner div of modal-body represents the white window with the contents
+* But this alone won't suffice as it will be obscured behind Sidebar
+* Diagram 4-modal: **z-index**
+    * CSS rule what element should be rendered on top of another element
+* Wrench into the plan where modal is deeply nested within other components which have a lot of styling applied to it
+* Diagram 5-modal: **Stacking Context**
+* Sidebar compared against Positioned
+* Whenever z-index is same, whichever appears later is displayed on top
+* Diagram 6-sol:
+* Make Modal direct child of body
