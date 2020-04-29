@@ -620,3 +620,13 @@ return { ...state, [action.payload.id]: action.payload };
 * Then in Modal.js, add modal selector as second argument to createPortal
 * In StreamDelete component, return Modal component
 * Where we use Portals: Modal, Django, Java application
+
+### Hiding a Modal
+* Semantic UI->modules->Modal
+* In Modal.js, use the above document
+* Click on background to make the modal go away
+* This is done by programmatic navigation
+* Issue of Event propagation
+    * If child element doesn't handle the event, it will bubble up to the parent element
+* So add a click event handler to modal as well and stop propagation
+
