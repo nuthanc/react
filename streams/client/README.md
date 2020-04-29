@@ -630,3 +630,6 @@ return { ...state, [action.payload.id]: action.payload };
     * If child element doesn't handle the event, it will bubble up to the parent element
 * So add a click event handler to modal as well and stop propagation
 
+### Making the Modal Reusable
+* Props to Modal in StreamDelete.js
+* Use those props in Modal.js
