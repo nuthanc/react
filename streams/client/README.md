@@ -609,3 +609,14 @@ return { ...state, [action.payload.id]: action.payload };
 * Whenever z-index is same, whichever appears later is displayed on top
 * Diagram 6-sol:
 * Make Modal direct child of body
+
+### Creating a Portal
+* Create Modal.js in components dir
+* Notice we are importing react-dom which we do only in the root component(index.js) file
+* createPortal takes 2 arguments
+* If directly attached to body, it will replace all the contents in the body
+* So create another div
+* Inside public/index.html, after div id root add id of modal
+* Then in Modal.js, add modal selector as second argument to createPortal
+* In StreamDelete component, return Modal component
+* Where we use Portals: Modal, Django, Java application
