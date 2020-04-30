@@ -646,3 +646,8 @@ return { ...state, [action.payload.id]: action.payload };
 </>
 ```
 * Some linters think that the above may be error, so we explicityly mention that
+
+### OnDismiss From the Parent
+* Remove history.push to root dir in Modal.js
+* Call props.onDismiss in Modal.js
+* onDismiss as props in StreamDelete
