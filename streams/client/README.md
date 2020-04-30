@@ -651,3 +651,7 @@ return { ...state, [action.payload.id]: action.payload };
 * Remove history.push to root dir in Modal.js
 * Call props.onDismiss in Modal.js
 * onDismiss as props in StreamDelete
+
+### Reminder on Path Params
+* In App.js, :id in Route
+* In StreamList.js, add Link element for Delete
