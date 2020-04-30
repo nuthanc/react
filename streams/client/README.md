@@ -633,3 +633,16 @@ return { ...state, [action.payload.id]: action.payload };
 ### Making the Modal Reusable
 * Props to Modal in StreamDelete.js
 * Use those props in Modal.js
+
+### React Fragments
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F17%2Fdiagrams.xml
+* Diagram 7-fragment:
+* Multiple jsx to variable not allowed, so wrapped within div
+* Diagram 8-fragment:
+* In StreamDelete, replace div with React fragment
+* React fragment can also be shortened to the below
+```js
+<>
+</>
+```
+* Some linters think that the above may be error, so we explicityly mention that
