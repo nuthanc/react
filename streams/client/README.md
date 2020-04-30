@@ -655,3 +655,8 @@ return { ...state, [action.payload.id]: action.payload };
 ### Reminder on Path Params
 * In App.js, :id in Route
 * In StreamList.js, add Link element for Delete
+
+### Fetching the Deletiom Stream
+* StreamDelete to class based component
+* Add componentDidMount
+* Import connect for wiring up Action creator
