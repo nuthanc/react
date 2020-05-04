@@ -660,3 +660,8 @@ return { ...state, [action.payload.id]: action.payload };
 * StreamDelete to class based component
 * Add componentDidMount
 * Import connect for wiring up Action creator
+
+### Conditionally Showing Stream Details
+* Define mapStateToProps in StreamDelete
+* Helper method of renderContent instead of just Loading text
+* Pass that as props
