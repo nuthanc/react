@@ -665,3 +665,15 @@ return { ...state, [action.payload.id]: action.payload };
 * Define mapStateToProps in StreamDelete
 * Helper method of renderContent instead of just Loading text
 * Pass that as props
+
+### Deleting a Stream
+* In StreamDelete, import Link
+* Use Link instead of button for Cancel
+* For Delete, add actionCreator of deleteStream
+* Use arrowFunction instead of directly calling because of id
+```js
+const id = this.props.match.params.id;
+//to
+const { id } = this.props.match.params;
+```
+* In actions index.js, add history.push to root dir
