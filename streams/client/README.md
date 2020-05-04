@@ -677,3 +677,7 @@ const id = this.props.match.params.id;
 const { id } = this.props.match.params;
 ```
 * In actions index.js, add history.push to root dir
+
+### Viewing a Stream
+* In App.js, streams/show to streams/:id in Route
+* In StreamList, Link element to stream title
