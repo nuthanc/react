@@ -688,3 +688,5 @@ const { id } = this.props.match.params;
 * Import Switch in App.js and wrap all the routes within it
 * Switch shows only the 1st Route that gets matched
 
+### Showing a Stream
+* In StreamShow, import connect and fetchStream
