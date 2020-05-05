@@ -690,3 +690,14 @@ const { id } = this.props.match.params;
 
 ### Showing a Stream
 * In StreamShow, import connect and fetchStream
+
+### RTMP Server Setup
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F18%2Fdiagrams.xml
+* Diagram 2-vid:
+* mkdir rtmpserver and cd into it
+* npm init
+* Diagram 3-rtmp: Docs
+* More in rtmpserver's README
+
+
+
