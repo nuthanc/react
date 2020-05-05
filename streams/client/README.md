@@ -681,3 +681,10 @@ const { id } = this.props.match.params;
 ### Viewing a Stream
 * In App.js, streams/show to streams/:id in Route
 * In StreamList, Link element to stream title
+
+### Switches with ReactRouter
+* /streams/new, we see both StreamCreate and StreamShow
+* :id is taking new, so it's showing StreamShow
+* Import Switch in App.js and wrap all the routes within it
+* Switch shows only the 1st Route that gets matched
+
