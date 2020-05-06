@@ -25,3 +25,10 @@
 * Add Audio Source by clicking on + and select Audio Input Capture
 * Select whatever Microphone you have as Device
 * To check, Start and Stop Recording eventually creating a Video file
+
+### Video Player Setup
+* Diagram 3-rtmp: https://github.com/illuspas/Node-Media-Server
+* Accessing the Live Stream in the above doc
+* Using http-flv, take the via flv.js over http-flv code and turn it to React Code
+* https://npmjs.com/package/flv.js
+* In client directory, npm i flv.js
