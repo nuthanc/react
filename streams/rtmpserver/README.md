@@ -15,3 +15,13 @@
 * 3 processes: 1 for client, 1 for api and the other for client
 * Diagram 4-obs: Download from this link
 * Start OBS on mac
+
+### OBS Scene Setup
+* Create a Scene in OBS by clicking on the + sign
+* Scene allows to specify different sources of Video, Audio etc
+* Click on Sources + sign and select Display Capture and OK
+* Click OK for default Display and Crop
+* Make sure the whole picture is in View by adjusting the Red bar
+* Add Audio Source by clicking on + and select Audio Input Capture
+* Select whatever Microphone you have as Device
+* To check, Start and Stop Recording eventually creating a Video file
