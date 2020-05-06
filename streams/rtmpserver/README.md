@@ -9,3 +9,9 @@
 * Create index.js and copy the code from Github
 * In package.json, replace test with start script
 * npm start
+
+### OBS installation
+* Diagram 2-vid: Different ports
+* 3 processes: 1 for client, 1 for api and the other for client
+* Diagram 4-obs: Download from this link
+* Start OBS on mac
