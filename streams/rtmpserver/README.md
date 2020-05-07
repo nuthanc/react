@@ -32,3 +32,9 @@
 * Using http-flv, take the via flv.js over http-flv code and turn it to React Code
 * https://npmjs.com/package/flv.js
 * In client directory, npm i flv.js
+
+### Implementing FLV JS
+* In StreamShow.js of client, import flv
+* In render method's return, create a Video element
+* In order to get reference, use refs and pass it to video element
+* Also pass style props and controls
