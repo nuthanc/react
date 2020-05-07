@@ -38,3 +38,12 @@
 * In render method's return, create a Video element
 * In order to get reference, use refs and pass it to video element
 * Also pass style props and controls
+
+### Creating a FLV Player
+* FLV downloads the video stream and converts into some kind of file that can be played in the HTML video player
+* In StreamShow's componentDidMount, create flvplayer based on the Node-Media-Server documentation link
+* https://github.com/illuspas/Node-Media-Server#via-flvjs-over-http-flv
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F18%2Fdiagrams.xml
+* Diagram 2-vid:
+* From OBS doc link, settings->stream
+
