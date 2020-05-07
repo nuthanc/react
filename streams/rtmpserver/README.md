@@ -47,3 +47,8 @@
 * Diagram 2-vid:
 * From OBS doc link, settings->stream
 
+### Optional Player Building
+* Error message becuase we are exiting after the if condition where the stream is not loaded
+* buildPlayer helper method
+* When there is an update like rerendering, componentDidUpdate will be called
+* 
