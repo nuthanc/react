@@ -51,4 +51,10 @@
 * Error message becuase we are exiting after the if condition where the stream is not loaded
 * buildPlayer helper method
 * When there is an update like rerendering, componentDidUpdate will be called
-* 
+
+### It Works
+* In OBS settings->Stream
+* Service: Custom, Server: rtmp://localhost/live
+* Stream key: 1(id of the stream viewing in the browser)
+* Hit Ok and start Streaming
+* I had forgot to npm start all 3(i.e, client, api and rtmpserver)
