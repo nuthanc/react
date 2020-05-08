@@ -58,3 +58,8 @@
 * Stream key: 1(id of the stream viewing in the browser)
 * Hit Ok and start Streaming
 * I had forgot to npm start all 3(i.e, client, api and rtmpserver)
+
+### Cleaning Up with ComponentWillUnmount
+* VideoPlayer is still attempting to download and process the video even though we are out of that page
+* Clean up VideoPlayer in componentWillUnmount
+* End of Streamy application
