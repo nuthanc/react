@@ -14,3 +14,5 @@
 
 ### App Generation
 * Create index.js in src after deleting the previous files
+* Create App.js in components
+* Add semantic-ui in public index.html
