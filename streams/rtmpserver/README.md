@@ -63,3 +63,10 @@
 * VideoPlayer is still attempting to download and process the video even though we are out of that page
 * Clean up VideoPlayer in componentWillUnmount
 * End of Streamy application
+
+### The Context System
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F19%2Fdiagrams.xml
+* Diagram 6:
+* Diagram 9-vs:
+* Diagram 10-vs:
+* D 11-vs:
