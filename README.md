@@ -21,3 +21,7 @@ Change of approach:
     * Video streaming application
     * mkdir streams
     
+* Context system
+    * npx create-react-app translate
+    
+
