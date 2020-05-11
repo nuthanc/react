@@ -20,3 +20,7 @@
 ### Selecting a Language
 * In App.js, add state object
 * Add onClick prop to i tags
+
+### A Touch More Setup
+* Create UserCreate.js, Field.js and Button.js in components
+* Import UserCreate in App.js
