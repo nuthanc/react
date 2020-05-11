@@ -29,3 +29,18 @@
 * D 14-context: Pipe in which data is sent
 * D 13-context: Data Into the pipe
 * D 15-context:
+
+### Creating Context Objects
+* New folder of contexts inside src dir
+* Create LanguageContext.js inside it, so that it can be imported only where it is required
+* createContext creates the context
+* Default value can be provided to the createContext call
+* In Button.js, import LanguageContext
+* D 13-parts: contextType to link Button to Context object
+* *contextType* is a special property name
+* static because attaching property directly to the class
+* It can also be set by the following
+```js
+Button.contextType = LanguageContext
+```
+* Not only strings but any kind like object, arrays etc in context object is possible
