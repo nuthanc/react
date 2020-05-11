@@ -16,3 +16,7 @@
 * Create index.js in src after deleting the previous files
 * Create App.js in components
 * Add semantic-ui in public index.html
+
+### Selecting a Language
+* In App.js, add state object
+* Add onClick prop to i tags
