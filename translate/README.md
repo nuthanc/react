@@ -24,3 +24,8 @@
 ### A Touch More Setup
 * Create UserCreate.js, Field.js and Button.js in components
 * Import UserCreate in App.js
+
+### Getting Data Out of Context
+* D 14-context: Pipe in which data is sent
+* D 13-context: Data Into the pipe
+* D 15-context:
