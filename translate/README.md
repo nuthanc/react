@@ -47,3 +47,9 @@ Button.contextType = LanguageContext
 
 ### Consuming the Context Value
 * Get the context value in text for Button and Field
+
+### The Context Provider
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F19%2Fdiagrams.xml
+* D 15-context:
+* In App, import LanguageContext and wrap UserCreate with LanguageContext.Provider
+* Provide *value* prop(special name) to Provider
