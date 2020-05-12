@@ -44,3 +44,6 @@
 Button.contextType = LanguageContext
 ```
 * Not only strings but any kind like object, arrays etc in context object is possible
+
+### Consuming the Context Value
+* Get the context value in text for Button and Field
