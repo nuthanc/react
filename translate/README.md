@@ -56,3 +56,10 @@ Button.contextType = LanguageContext
 
 ### Gotchas Around Providers
 * console log createContext in LanguageContext.js
+* D 16-pro:
+* The value prop doesn't have to be a state property
+* It can be any other value
+* D 20-flow:
+* D 21-hard:
+* D 22-diff:
+* Provider is creating a separate pipe of info every time we use it
