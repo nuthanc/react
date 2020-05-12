@@ -53,3 +53,6 @@ Button.contextType = LanguageContext
 * D 15-context:
 * In App, import LanguageContext and wrap UserCreate with LanguageContext.Provider
 * Provide *value* prop(special name) to Provider
+
+### Gotchas Around Providers
+* console log createContext in LanguageContext.js
