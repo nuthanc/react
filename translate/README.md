@@ -63,3 +63,8 @@ Button.contextType = LanguageContext
 * D 21-hard:
 * D 22-diff:
 * Provider is creating a separate pipe of info every time we use it
+
+### Accessing Data with Consumers
+* In Button.js, contextType is not required when Consumer is used
+* We always provide one Child to the Consumer which is a function
+* The function will be called with whatever value is inside the pipe
