@@ -68,3 +68,14 @@ Button.contextType = LanguageContext
 * In Button.js, contextType is not required when Consumer is used
 * We always provide one Child to the Consumer which is a function
 * The function will be called with whatever value is inside the pipe
+
+### Pulling From Multiple Contexts
+* Consumer is used when there are multiple Contexts
+* D 24-m:
+* Create ColorContext.js in contexts dir
+* We don't have to provide a default value to createContext
+* Import this in App.js
+* It doesn't matter if we wrap ColorContext outside of LanguageContext or inside of it
+* In Button.js, import ColorContext and wrap button with it
+* Move code within ColorContext to helper function
+
