@@ -20,8 +20,10 @@ Change of approach:
 * Streams
     * Video streaming application
     * mkdir streams
+    * CRUD operations with React and Redux
     
 * Context system
     * npx create-react-app translate
+    * This also contains the use of Context as replacement to Redux
     
 
