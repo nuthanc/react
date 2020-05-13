@@ -79,3 +79,11 @@ Button.contextType = LanguageContext
 * In Button.js, import ColorContext and wrap button with it
 * Move code within ColorContext to helper function
 
+### Replacing Redux with Context
+* D 29-r:
+* D 28: Redux vs Context
+* D 27:
+* Create LanguageSelector.js inside components
+* Cut and paste div from App.js to LanguageSelector
+* Pass onLanguageChange as prop to LanguageSelector in App.js after importing it
+* 
