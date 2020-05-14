@@ -114,4 +114,8 @@ Button.contextType = LanguageContext
 * Only export is for named export
 
 ### Rendering the Language Store
-* In App.js, import LanguageStore
+* In App.js, import LanguageStore and remove unnecessary items
+
+### Connecting the Selector to the Store
+* In LanguageSelector, import LanguageContext and console log this.context to check the state and callback being sent
+
