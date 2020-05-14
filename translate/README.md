@@ -94,4 +94,21 @@ Button.contextType = LanguageContext
   * Inside the render method is *view logic*
 * D 3-hier:
   * LanguageStore to contain all the business logic
-  
+
+### Implementing a Language Store
+* D 3-hier:
+* In LanguageContext.js, store createContext in Context(note the capital C) and create LanguageStore
+  * Components need to have a capital letter, else React assumes it is a normal jsx or html
+* We need to make sure that all of the other components be wrapped with Context.Provider to get the context
+```js
+<LanguageStore>
+  <div>
+    <form>
+    </form>
+    <LanguageSelector />
+  </div >
+</LanguageStore>
+
+//The above jsx and component will be available in this.props.children
+```
+* Only export is for named export
