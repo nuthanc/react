@@ -112,3 +112,6 @@ Button.contextType = LanguageContext
 //The above jsx and component will be available in this.props.children
 ```
 * Only export is for named export
+
+### Rendering the Language Store
+* In App.js, import LanguageStore
