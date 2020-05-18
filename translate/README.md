@@ -122,3 +122,7 @@ Button.contextType = LanguageContext
 ### Connecting the Field and Button to the Store
 * In Field.js, use this.context.language
 * In Button.js, destructure language property in LanguageContext Consumer
+
+### Context vs Redux Recap
+* Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2Fredux-code%2Fmaster%2Fdiagrams%2F20%2Fdiagrams.xml
+* D 4-context:
