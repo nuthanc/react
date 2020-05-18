@@ -119,3 +119,6 @@ Button.contextType = LanguageContext
 ### Connecting the Selector to the Store
 * In LanguageSelector, import LanguageContext and console log this.context to check the state and callback being sent
 
+### Connecting the Field and Button to the Store
+* In Field.js, use this.context.language
+* In Button.js, destructure language property in LanguageContext Consumer
