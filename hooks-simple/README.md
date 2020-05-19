@@ -8,3 +8,9 @@
 * D 2-mock:
 * D 3-json:
 * npx create-react-app hooks-simple
+
+### Building Stateful Class Components
+* Create index.js inside src
+* Create components dir inside src and create App.js
+* D 5-hier:
+* Create class based component first in App.js
