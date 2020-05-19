@@ -16,14 +16,14 @@ Change of approach:
 * Blog
     * redux react-redux axios blog
     * Simple application of only 2 components with more learning on Redux and middleware Redux-thunk
-
 * Streams
     * Video streaming application
     * mkdir streams
-    * CRUD operations with React and Redux
-    
+    * CRUD operations with React and Redux  
 * Context system
     * npx create-react-app translate
     * This also contains the use of Context as replacement to Redux
+* Hooks-simple
+    * Basics about Hooks system
     
 
