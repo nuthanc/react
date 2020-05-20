@@ -33,3 +33,8 @@ const [colorOne, colorTwo] = colors;
 * D 9-useState:
 * D 10-same: Individual values instead of an object
 
+### Building the ResourceList
+* D 5-hier:
+* D 11-app:
+* Create ResourceList.js in components
+* Import ResourceList in App.js and call that component and pass resource as prop
