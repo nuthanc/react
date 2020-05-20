@@ -21,3 +21,15 @@
 * Change from Class based to Functional Component
 * useState and assign to Array
 * npm start
+
+### UseState in Detail
+* useState with **Array Destructuring**
+```js
+const colors = ['red', 'green']
+const [colorOne, colorTwo] = colors;
+//colorOne is red
+//colorTwo is green
+```
+* D 9-useState:
+* D 10-same: Individual values instead of an object
+
