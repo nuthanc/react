@@ -14,3 +14,10 @@
 * Create components dir inside src and create App.js
 * D 5-hier:
 * Create class based component first in App.js
+
+### The UseState Hook
+* D 6-hooks: 
+* Import useState in App.js
+* Change from Class based to Functional Component
+* useState and assign to Array
+* npm start
