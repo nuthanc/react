@@ -38,3 +38,14 @@ const [colorOne, colorTwo] = colors;
 * D 11-app:
 * Create ResourceList.js in components
 * Import ResourceList in App.js and call that component and pass resource as prop
+
+### Fetching a Given Resource
+* jsonplaceholder.typicode.com and scroll down to Resources
+* Checkout posts and todos endpoints
+* npm i axios
+* npm start
+* In ResourceList, import axios
+* Use componentDidMount lifecycle method to make Network request
+* Check in Networks tab of browser for xhr requests
+* Async for Waiting until response is fetched
+* On clicking todos, we are not getting 200 or changes in the Network tab
