@@ -49,3 +49,21 @@ const [colorOne, colorTwo] = colors;
 * Check in Networks tab of browser for xhr requests
 * Async for Waiting until response is fetched
 * On clicking todos, we are not getting 200 or changes in the Network tab
+
+### ComponentDidUpdate vs ComponentDidMount
+* D 12-flow: componentDidMount gets called one single time
+* So, we need to use componentDidUpdate
+* Not recommended step in componentDidUpdate
+```js
+async componentDidUpdate() {
+    const response = await axios.get(`http://jsonplaceholder.typicode.com/${this.props.resource}`);
+
+    this.setState({ resources: response.data })
+  }
+```
+* componentDidUpdate gets called whenever the parent component rerenders itself or setState inside the particular component(ResourceList)
+* componentDidUpdate keeps running endlessly because of this
+* A little check to componentDidUpdate can be applied
+* npm start
+* It works now
+* But class based components have this nasty duplicate logic and additional check
