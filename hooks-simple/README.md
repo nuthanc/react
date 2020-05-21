@@ -67,3 +67,7 @@ async componentDidUpdate() {
 * npm start
 * It works now
 * But class based components have this nasty duplicate logic and additional check
+
+### Refactoring a Class to a Function
+* Import useState and useEffect
+* Save and npm start to see if it renders without any Error messages
