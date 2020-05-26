@@ -71,3 +71,10 @@ async componentDidUpdate() {
 ### Refactoring a Class to a Function
 * Import useState and useEffect
 * Save and npm start to see if it renders without any Error messages
+
+### Lifecycles with useEffect
+* Receive props as argument in ResourceList
+* Destructure resource
+* D 13-useEffect:
+* npm start and check in Network tab
+* While clicking on Todos nothing happens
