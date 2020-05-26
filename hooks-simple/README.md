@@ -91,3 +91,8 @@ async componentDidUpdate() {
 * D 17-call:
   * Only when there is a change, useEffect calls the arrow function
 
+### Does It Get Called
+* D 15-arr:
+  * When the 2nd argument to useEffect is not passed, it gets called non-stop 
+  * With empty array, it gets invoked the 1st time(every time), but the 2nd time it doesn't get called: Identical to *componentDidMount*
+  
