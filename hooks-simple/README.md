@@ -72,9 +72,22 @@ async componentDidUpdate() {
 * Import useState and useEffect
 * Save and npm start to see if it renders without any Error messages
 
-### Lifecycles with useEffect
+### Lifecycles with UseEffect
 * Receive props as argument in ResourceList
 * Destructure resource
 * D 13-useEffect:
+  * First argument: callback function
+  * Second argument: Empty array
 * npm start and check in Network tab
 * While clicking on Todos nothing happens
+
+### Updates with UseEffect
+* Same issue as componentDidUpdate
+* Place resource inside the array in useEffect's 2nd argument
+* npm start and check
+* It works
+* If same button is clicked again and again, there is no request in the Network tab
+* D 16:
+* D 17-call:
+  * Only when there is a change, useEffect calls the arrow function
+
