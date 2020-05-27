@@ -130,3 +130,6 @@ hi
 
 (() => console.log('hi'))()
 ```
+
+### Rendering a List
+* Change length to multi-line JSX
