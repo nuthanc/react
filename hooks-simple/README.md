@@ -133,3 +133,10 @@ hi
 
 ### Rendering a List
 * Change length to multi-line JSX
+
+### Actual Code Reuse
+* D 1-hooks:
+* D 2-share:
+* D 18-reuse:
+* Extracting hook related logic to a separate function
+* useResources is that function
