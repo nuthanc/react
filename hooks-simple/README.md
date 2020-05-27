@@ -96,3 +96,37 @@ async componentDidUpdate() {
   * When the 2nd argument to useEffect is not passed, it gets called non-stop 
   * With empty array, it gets invoked the 1st time(every time), but the 2nd time it doesn't get called: Identical to *componentDidMount*
   
+### Quick Gotcha with UseEffect
+* useEffect cannot use async or promise function as 1st argument
+* Alternatively we can define an invoke an arrow function as 1st argument
+```js
+const fetchResource = async (resource) => {
+    const response = await axios.get(
+      `http://jsonplaceholder.typicode.com/${resource}`
+    );
+
+    setResources(response.data);
+  };
+
+  useEffect(() => {
+    fetchResource(resource);
+  }, [resource]);
+
+  // The below is used
+
+useEffect(() => {
+  (async resource => {
+    const response = await axios.get(
+      `http://jsonplaceholder.typicode.com/${resource}`
+    );
+    setResources(response.data);
+  })(resource);
+}, [resource]);
+
+//This is similar to 
+const hi = () => console.log('hi')
+hi()
+hi
+
+(() => console.log('hi'))()
+```
