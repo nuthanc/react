@@ -25,5 +25,7 @@ Change of approach:
     * This also contains the use of Context as replacement to Redux
 * Hooks-simple
     * Basics about Hooks system
+* Refactor seasons project using React Hooks
+    * Copying seasons from react_udemy seasons branch
     
 
