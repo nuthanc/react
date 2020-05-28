@@ -140,3 +140,14 @@ hi
 * D 18-reuse:
 * Extracting hook related logic to a separate function
 * useResources is that function
+
+### Code Reuse with Hooks
+* Create a separate file called useResources.js inside components dir
+* Files that export a function are lowercase
+* Cut that useResources function and paste it here
+* Import useResources in ResourceList
+* Actual reuse case for users endpoint
+* Create UserList.js in components dir
+* Import UserList in App.js
+* UserList is making code reuse
+  * Zero Code Logic in UserList
