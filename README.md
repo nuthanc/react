@@ -20,6 +20,7 @@ Change of approach:
     * Video streaming application
     * mkdir streams
     * CRUD operations with React and Redux  
+    * Redux form
 * Context system
     * npx create-react-app translate
     * This also contains the use of Context as replacement to Redux
@@ -27,5 +28,8 @@ Change of approach:
     * Basics about Hooks system
 * Refactor seasons project using React Hooks
     * Copying seasons from react_udemy seasons branch
+* ReduxSimpleStarter
+    * github.com/StephenGrider/ReduxSimpleStarter
+
     
 
