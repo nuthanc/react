@@ -1,4 +1,4 @@
-# udemy_react
+# react
 
 This repo has many branches denoting different projects
 * my_buildings
